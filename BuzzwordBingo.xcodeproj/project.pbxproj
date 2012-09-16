@@ -19,6 +19,7 @@
 		6DC66C8016058157007B0F36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DC66C7E16058157007B0F36 /* InfoPlist.strings */; };
 		6DC66C8316058157007B0F36 /* BuzzwordBingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C8216058157007B0F36 /* BuzzwordBingoTests.m */; };
 		6DC66C8F16058197007B0F36 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C8E16058197007B0F36 /* WordList.m */; };
+		6DC66C96160584C1007B0F36 /* NSArray+jal_shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C95160584C1007B0F36 /* NSArray+jal_shuffle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		6DC66C8216058157007B0F36 /* BuzzwordBingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuzzwordBingoTests.m; sourceTree = "<group>"; };
 		6DC66C8D16058197007B0F36 /* WordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordList.h; path = Models/WordList.h; sourceTree = "<group>"; };
 		6DC66C8E16058197007B0F36 /* WordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordList.m; path = Models/WordList.m; sourceTree = "<group>"; };
+		6DC66C94160584C1007B0F36 /* NSArray+jal_shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+jal_shuffle.h"; path = "Categories/NSArray+jal_shuffle.h"; sourceTree = "<group>"; };
+		6DC66C95160584C1007B0F36 /* NSArray+jal_shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+jal_shuffle.m"; path = "Categories/NSArray+jal_shuffle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		6DC66C6316058157007B0F36 /* BuzzwordBingo */ = {
 			isa = PBXGroup;
 			children = (
+				6DC66C9016058444007B0F36 /* Categories */,
 				6DC66C6C16058157007B0F36 /* AppDelegate.h */,
 				6DC66C8C16058170007B0F36 /* Models */,
 				6DC66C6D16058157007B0F36 /* AppDelegate.m */,
@@ -154,6 +158,15 @@
 				6DC66C8E16058197007B0F36 /* WordList.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		6DC66C9016058444007B0F36 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6DC66C94160584C1007B0F36 /* NSArray+jal_shuffle.h */,
+				6DC66C95160584C1007B0F36 /* NSArray+jal_shuffle.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 				6DC66C6A16058157007B0F36 /* main.m in Sources */,
 				6DC66C6E16058157007B0F36 /* AppDelegate.m in Sources */,
 				6DC66C8F16058197007B0F36 /* WordList.m in Sources */,
+				6DC66C96160584C1007B0F36 /* NSArray+jal_shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

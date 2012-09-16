@@ -10,5 +10,6 @@
 
 @interface WordList : NSObject
 -(id) initWithWords: (NSArray*) _words;
+-(NSArray*) take: (NSUInteger) nCountWords;
 @property (nonatomic, strong, readonly) NSArray* words;
 @end

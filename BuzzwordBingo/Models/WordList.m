@@ -7,6 +7,7 @@
 //
 
 #import "WordList.h"
+#import "NSArray+jal_shuffle.h"
 
 @interface WordList () {
     NSArray *words;
@@ -24,4 +25,14 @@
     }
     return self;
 }
+
+-(NSArray*) take: (NSUInteger) nCountWords {
+    NSRange rng;
+    rng.location = 0;
+    rng.length = self.words.count;
+    if(rng.length > nCountWords) rng.length = nCountWords;
+    
+    return [[self.words jal_shuffle] subarrayWithRange: rng];
+}
+
 @end
