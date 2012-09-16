@@ -18,6 +18,7 @@
 		6DC66C7816058157007B0F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5F16058157007B0F36 /* Foundation.framework */; };
 		6DC66C8016058157007B0F36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DC66C7E16058157007B0F36 /* InfoPlist.strings */; };
 		6DC66C8316058157007B0F36 /* BuzzwordBingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C8216058157007B0F36 /* BuzzwordBingoTests.m */; };
+		6DC66C8F16058197007B0F36 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C8E16058197007B0F36 /* WordList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		6DC66C7F16058157007B0F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DC66C8116058157007B0F36 /* BuzzwordBingoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuzzwordBingoTests.h; sourceTree = "<group>"; };
 		6DC66C8216058157007B0F36 /* BuzzwordBingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuzzwordBingoTests.m; sourceTree = "<group>"; };
+		6DC66C8D16058197007B0F36 /* WordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordList.h; path = Models/WordList.h; sourceTree = "<group>"; };
+		6DC66C8E16058197007B0F36 /* WordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordList.m; path = Models/WordList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				6DC66C6C16058157007B0F36 /* AppDelegate.h */,
+				6DC66C8C16058170007B0F36 /* Models */,
 				6DC66C6D16058157007B0F36 /* AppDelegate.m */,
 				6DC66C6416058157007B0F36 /* Supporting Files */,
 			);
@@ -141,6 +145,15 @@
 				6DC66C7E16058157007B0F36 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DC66C8C16058170007B0F36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DC66C8D16058197007B0F36 /* WordList.h */,
+				6DC66C8E16058197007B0F36 /* WordList.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 			files = (
 				6DC66C6A16058157007B0F36 /* main.m in Sources */,
 				6DC66C6E16058157007B0F36 /* AppDelegate.m in Sources */,
+				6DC66C8F16058197007B0F36 /* WordList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
