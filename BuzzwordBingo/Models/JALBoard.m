@@ -16,6 +16,7 @@
     NSUInteger rows;
     NSUInteger cols;
 }
+-(NSUInteger) indexForRow: (NSUInteger) row andCol: (NSUInteger) col;
 @end
 
 @implementation JALBoard
@@ -38,4 +39,13 @@
     return self;
 }
 
+-(JALSpace*) spaceAtRow: (NSUInteger) row andCol: (NSUInteger) col {
+    return [self spaceAtIndex: [self indexForRow:row andCol:col]];
+}
+-(JALSpace*) spaceAtIndex: (NSUInteger) index {
+    return [spaces objectAtIndex: index];
+}
+-(NSUInteger) indexForRow: (NSUInteger) row andCol: (NSUInteger) col {
+    return row * rows + col;
+}
 @end

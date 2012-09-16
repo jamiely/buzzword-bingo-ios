@@ -9,9 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @class WordList;
+@class JALSpace;
 
 @interface JALBoard : NSObject
+
 -(id) initWithWordList: (WordList*) list;
+-(JALSpace*) spaceAtRow: (NSUInteger) row andCol: (NSUInteger) col;
+-(JALSpace*) spaceAtIndex: (NSUInteger) index;
+
 @property (nonatomic, assign, readonly) NSUInteger rows;
 @property (nonatomic, assign, readonly) NSUInteger cols;
 @property (nonatomic, strong) NSArray *spaces;
