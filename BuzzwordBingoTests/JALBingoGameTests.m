@@ -39,23 +39,39 @@
     STAssertEqualObjects([@"Alabama,Arkansas" componentsSeparatedByString: @","],
         marked, @"Marked words match");
 }
--(void) testBingo {
+-(void) testBingoVertically {
     // VERTICAL bingo
-    JALBingoGame *game1 = [[JALBingoGame alloc] initWithWordList: wordList];
     NSMutableArray *words1 = [NSMutableArray array];
     for(NSInteger i=0, rows = game.board.rows; i<rows; i++) {
-        [words1 addObject:[[game1.board spaceAtRow:i andCol:0] word]];
+        [words1 addObject:[[game.board spaceAtRow:i andCol:0] word]];
     }
     // Play first n-1 words
     for(NSInteger i=0, c = words1.count-1; i<c; i++) {
         NSString *word = [words1 objectAtIndex: i];
-        [game1 playWord: word];
-        NSLog(@"Played word %d \"%@\". Is bingo? %@", i, word, game1.isBingo ? @"YES": @"NO");
-        STAssertFalse(game1.isBingo, @"Is Not bingo");
+        [game playWord: word];
+        NSLog(@"Played word %d \"%@\". Is bingo? %@", i, word, game.isBingo ? @"YES": @"NO");
+        STAssertFalse(game.isBingo, @"Is Not bingo");
     }
     
     
-    [game1 playWord: [words1 lastObject]];
-    STAssertTrue(game1.isBingo, @"Is bingo");
+    [game playWord: [words1 lastObject]];
+    STAssertTrue(game.isBingo, @"Is bingo");
+}
+-(void) testBingoHorizontally {
+    // Horizontal bingo
+    NSMutableArray *words1 = [NSMutableArray array];
+    for(NSInteger i=0, cols = game.board.cols; i<cols; i++) {
+        [words1 addObject:[[game.board spaceAtRow:0 andCol:i] word]];
+    }
+    // Play first n-1 words
+    for(NSInteger i=0, c = words1.count-1; i<c; i++) {
+        NSString *word = [words1 objectAtIndex: i];
+        [game playWord: word];
+        NSLog(@"Played word %d \"%@\". Is bingo? %@", i, word, game.isBingo ? @"YES": @"NO");
+        STAssertFalse(game.isBingo, @"Is Not bingo");
+    }
+    
+    [game playWord: [words1 lastObject]];
+    STAssertTrue(game.isBingo, @"Is bingo");
 }
 @end
