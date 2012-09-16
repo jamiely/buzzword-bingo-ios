@@ -27,6 +27,7 @@
 		6DC66CB116064A76007B0F36 /* JALBingoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB016064A76007B0F36 /* JALBingoGame.m */; };
 		6DC66CB416064CF3007B0F36 /* JALHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB316064CF3007B0F36 /* JALHistory.m */; };
 		6DC66CBA16065094007B0F36 /* JALBingoGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB916065094007B0F36 /* JALBingoGameTests.m */; };
+		6DC66CBD16065B4E007B0F36 /* WordListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CBC16065B4E007B0F36 /* WordListTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		6DC66CB316064CF3007B0F36 /* JALHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALHistory.m; path = Models/JALHistory.m; sourceTree = "<group>"; };
 		6DC66CB816065094007B0F36 /* JALBingoGameTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALBingoGameTests.h; sourceTree = "<group>"; };
 		6DC66CB916065094007B0F36 /* JALBingoGameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALBingoGameTests.m; sourceTree = "<group>"; };
+		6DC66CBB16065B4E007B0F36 /* WordListTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordListTests.h; sourceTree = "<group>"; };
+		6DC66CBC16065B4E007B0F36 /* WordListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 				6DC66C9B16058724007B0F36 /* JALBoardTests.m */,
 				6DC66CB816065094007B0F36 /* JALBingoGameTests.h */,
 				6DC66CB916065094007B0F36 /* JALBingoGameTests.m */,
+				6DC66CBB16065B4E007B0F36 /* WordListTests.h */,
+				6DC66CBC16065B4E007B0F36 /* WordListTests.m */,
 			);
 			path = BuzzwordBingoTests;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 				6DC66C8316058157007B0F36 /* BuzzwordBingoTests.m in Sources */,
 				6DC66C9C16058724007B0F36 /* JALBoardTests.m in Sources */,
 				6DC66CBA16065094007B0F36 /* JALBingoGameTests.m in Sources */,
+				6DC66CBD16065B4E007B0F36 /* WordListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

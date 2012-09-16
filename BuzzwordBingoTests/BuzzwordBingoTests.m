@@ -20,17 +20,4 @@
     wordList = [[WordList alloc] initWithWords: words];
 }
 
-- (void)testWordListHasWords
-{
-    STAssertNotNil(wordList.words, @"A word list has words");
-}
-
-- (void) testWordListTakeN {
-    STAssertEquals([[wordList take: 3] count], (NSUInteger)3,
-        @"We can take N words from a list");
-        
-    STAssertEquals([[wordList take: 100] count], wordList.words.count,
-        @"We cannot take more words than the total number.");
-}
-
 @end
