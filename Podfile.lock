@@ -1,0 +1,11 @@
+
+PODS:
+- MACollectionUtilities (0.0.1)
+
+DEPENDENCIES:
+- MACollectionUtilities
+
+SPEC CHECKSUMS:
+  MACollectionUtilities: b0f5d6d0b03a017d02f010a16d065d3588825443
+
+COCOAPODS: 0.14.0
