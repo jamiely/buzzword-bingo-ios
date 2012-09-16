@@ -9,31 +9,27 @@
 #import "BuzzwordBingoTests.h"
 #import "WordList.h"
 
-@interface BuzzwordBingoTests () {
-    WordList *list;
-}
-
-@end
-
 @implementation BuzzwordBingoTests
 
 - (void) setUp {
     [super setUp];
     
-    list = [[WordList alloc] initWithWords:@[@"apple", @"banana", @"cantaloupe",
-        @"durian", @"egg fruit"]];
+    // Only the first 25 states alphabetically
+    NSArray *words = [@"Alabama,Alaska,American Samoa,Arizona,Arkansas,California,Colorado,Connecticut,Delaware,District of Columbia,Florida,Georgia,Guam,Hawaii,Idaho,Illinois,Indiana,Iowa,Kansas,Kentucky,Louisiana,Maine,Maryland,Massachusetts,Michigan" componentsSeparatedByString:@","];
+    
+    wordList = [[WordList alloc] initWithWords: words];
 }
 
 - (void)testWordListHasWords
 {
-    STAssertNotNil(list.words, @"A word list has words");
+    STAssertNotNil(wordList.words, @"A word list has words");
 }
 
 - (void) testWordListTakeN {
-    STAssertEquals([[list take: 3] count], (NSUInteger)3,
+    STAssertEquals([[wordList take: 3] count], (NSUInteger)3,
         @"We can take N words from a list");
         
-    STAssertEquals([[list take: 20] count], list.words.count,
+    STAssertEquals([[wordList take: 100] count], wordList.words.count,
         @"We cannot take more words than the total number.");
 }
 

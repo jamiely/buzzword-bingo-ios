@@ -24,6 +24,9 @@
 		6DC66C99160586FA007B0F36 /* JALBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C98160586FA007B0F36 /* JALBoard.m */; };
 		6DC66C9C16058724007B0F36 /* JALBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C9B16058724007B0F36 /* JALBoardTests.m */; };
 		6DC66C9F1605879C007B0F36 /* JALSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66C9E1605879C007B0F36 /* JALSpace.m */; };
+		6DC66CB116064A76007B0F36 /* JALBingoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB016064A76007B0F36 /* JALBingoGame.m */; };
+		6DC66CB416064CF3007B0F36 /* JALHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB316064CF3007B0F36 /* JALHistory.m */; };
+		6DC66CBA16065094007B0F36 /* JALBingoGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB916065094007B0F36 /* JALBingoGameTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,12 @@
 		6DC66C9B16058724007B0F36 /* JALBoardTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALBoardTests.m; sourceTree = "<group>"; };
 		6DC66C9D1605879C007B0F36 /* JALSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JALSpace.h; path = Models/JALSpace.h; sourceTree = "<group>"; };
 		6DC66C9E1605879C007B0F36 /* JALSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALSpace.m; path = Models/JALSpace.m; sourceTree = "<group>"; };
+		6DC66CAF16064A76007B0F36 /* JALBingoGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JALBingoGame.h; path = Models/JALBingoGame.h; sourceTree = "<group>"; };
+		6DC66CB016064A76007B0F36 /* JALBingoGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALBingoGame.m; path = Models/JALBingoGame.m; sourceTree = "<group>"; };
+		6DC66CB216064CF3007B0F36 /* JALHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JALHistory.h; path = Models/JALHistory.h; sourceTree = "<group>"; };
+		6DC66CB316064CF3007B0F36 /* JALHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALHistory.m; path = Models/JALHistory.m; sourceTree = "<group>"; };
+		6DC66CB816065094007B0F36 /* JALBingoGameTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALBingoGameTests.h; sourceTree = "<group>"; };
+		6DC66CB916065094007B0F36 /* JALBingoGameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALBingoGameTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +164,8 @@
 				6DC66C7C16058157007B0F36 /* Supporting Files */,
 				6DC66C9A16058724007B0F36 /* JALBoardTests.h */,
 				6DC66C9B16058724007B0F36 /* JALBoardTests.m */,
+				6DC66CB816065094007B0F36 /* JALBingoGameTests.h */,
+				6DC66CB916065094007B0F36 /* JALBingoGameTests.m */,
 			);
 			path = BuzzwordBingoTests;
 			sourceTree = "<group>";
@@ -177,6 +188,10 @@
 				6DC66C98160586FA007B0F36 /* JALBoard.m */,
 				6DC66C9D1605879C007B0F36 /* JALSpace.h */,
 				6DC66C9E1605879C007B0F36 /* JALSpace.m */,
+				6DC66CAF16064A76007B0F36 /* JALBingoGame.h */,
+				6DC66CB016064A76007B0F36 /* JALBingoGame.m */,
+				6DC66CB216064CF3007B0F36 /* JALHistory.h */,
+				6DC66CB316064CF3007B0F36 /* JALHistory.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -317,6 +332,8 @@
 				6DC66C96160584C1007B0F36 /* NSArray+jal_shuffle.m in Sources */,
 				6DC66C99160586FA007B0F36 /* JALBoard.m in Sources */,
 				6DC66C9F1605879C007B0F36 /* JALSpace.m in Sources */,
+				6DC66CB116064A76007B0F36 /* JALBingoGame.m in Sources */,
+				6DC66CB416064CF3007B0F36 /* JALHistory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +343,7 @@
 			files = (
 				6DC66C8316058157007B0F36 /* BuzzwordBingoTests.m in Sources */,
 				6DC66C9C16058724007B0F36 /* JALBoardTests.m in Sources */,
+				6DC66CBA16065094007B0F36 /* JALBingoGameTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  JALBoardTests.h
+//  JALBingoGameTests.h
 //  BuzzwordBingo
 //
 //  Created by Jamie Ly on 16/09/2012.
@@ -8,6 +8,6 @@
 
 #import "BuzzwordBingoTests.h"
 
-@interface JALBoardTests : BuzzwordBingoTests
+@interface JALBingoGameTests : BuzzwordBingoTests
 
 @end

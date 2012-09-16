@@ -8,6 +8,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface BuzzwordBingoTests : SenTestCase
+@class WordList;
+
+@interface BuzzwordBingoTests : SenTestCase {
+    WordList *wordList;
+}
 
 @end

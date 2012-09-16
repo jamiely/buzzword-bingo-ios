@@ -16,6 +16,8 @@
 -(id) initWithWordList: (WordList*) list;
 -(JALSpace*) spaceAtRow: (NSUInteger) row andCol: (NSUInteger) col;
 -(JALSpace*) spaceAtIndex: (NSUInteger) index;
+-(BOOL) markWord: (NSString*) word;
+-(NSArray*) markedWords;
 
 @property (nonatomic, assign, readonly) NSUInteger rows;
 @property (nonatomic, assign, readonly) NSUInteger cols;

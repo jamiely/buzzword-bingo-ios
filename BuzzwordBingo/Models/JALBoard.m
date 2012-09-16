@@ -15,8 +15,10 @@
     NSArray *spaces;
     NSUInteger rows;
     NSUInteger cols;
+    NSDictionary *spacesByWord;
 }
 -(NSUInteger) indexForRow: (NSUInteger) row andCol: (NSUInteger) col;
+-(NSArray*) markedSpaces;
 @end
 
 @implementation JALBoard
@@ -31,10 +33,15 @@
         rows = 5;
         cols = 5;
         NSArray *words = [list take: rows * cols];
+        NSMutableDictionary *byWord = [NSMutableDictionary dictionary];
         spaces = [words ma_map:^id(NSString* word) {
             JALSpace *space = [[JALSpace alloc] initWithWord: word];
+            // Add the space to a dictionary by word
+            [byWord setValue: space forKey: word];
             return space;
         }];
+        
+        spacesByWord = [NSDictionary dictionaryWithDictionary: byWord];
     }
     return self;
 }
@@ -47,5 +54,23 @@
 }
 -(NSUInteger) indexForRow: (NSUInteger) row andCol: (NSUInteger) col {
     return row * rows + col;
+}
+-(BOOL) markWord: (NSString*) word {
+    JALSpace *space = [spacesByWord objectForKey: word];
+    if(space) {
+        space.marked = YES;
+        return YES;
+    }
+    return NO;
+}
+-(NSArray*) markedSpaces {
+    return [spaces ma_select:^BOOL(JALSpace* space) {
+        return space.marked;
+    }];
+}
+-(NSArray*) markedWords {
+    return [[self markedSpaces] ma_map:^id(JALSpace *space) {
+        return space.word;
+    }];
 }
 @end

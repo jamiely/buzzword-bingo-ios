@@ -20,11 +20,7 @@
 -(void) setUp {
     [super setUp];
     
-    WordList *list = [[WordList alloc] initWithWords: @[
-        @"alpha", @"beta", @"delta", @"gamma", @"iota"
-    ]];
-    
-    board = [[JALBoard alloc] initWithWordList: list];
+    board = [[JALBoard alloc] initWithWordList: wordList];
 }
 
 -(void) testHasSpaces {
