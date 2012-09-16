@@ -28,6 +28,9 @@
 		6DC66CB416064CF3007B0F36 /* JALHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB316064CF3007B0F36 /* JALHistory.m */; };
 		6DC66CBA16065094007B0F36 /* JALBingoGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CB916065094007B0F36 /* JALBingoGameTests.m */; };
 		6DC66CBD16065B4E007B0F36 /* WordListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CBC16065B4E007B0F36 /* WordListTests.m */; };
+		6DC66CC016065FED007B0F36 /* JALDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CBF16065FED007B0F36 /* JALDirection.m */; };
+		6DC66CC316066136007B0F36 /* JALPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CC216066136007B0F36 /* JALPosition.m */; };
+		6DC66CC6160666AB007B0F36 /* JALDirectionPole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CC5160666AB007B0F36 /* JALDirectionPole.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,12 @@
 		6DC66CB916065094007B0F36 /* JALBingoGameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALBingoGameTests.m; sourceTree = "<group>"; };
 		6DC66CBB16065B4E007B0F36 /* WordListTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordListTests.h; sourceTree = "<group>"; };
 		6DC66CBC16065B4E007B0F36 /* WordListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordListTests.m; sourceTree = "<group>"; };
+		6DC66CBE16065FED007B0F36 /* JALDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JALDirection.h; path = Models/JALDirection.h; sourceTree = "<group>"; };
+		6DC66CBF16065FED007B0F36 /* JALDirection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALDirection.m; path = Models/JALDirection.m; sourceTree = "<group>"; };
+		6DC66CC116066135007B0F36 /* JALPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JALPosition.h; path = Models/JALPosition.h; sourceTree = "<group>"; };
+		6DC66CC216066136007B0F36 /* JALPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALPosition.m; path = Models/JALPosition.m; sourceTree = "<group>"; };
+		6DC66CC4160666AA007B0F36 /* JALDirectionPole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JALDirectionPole.h; path = Models/JALDirectionPole.h; sourceTree = "<group>"; };
+		6DC66CC5160666AB007B0F36 /* JALDirectionPole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALDirectionPole.m; path = Models/JALDirectionPole.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +206,12 @@
 				6DC66CB016064A76007B0F36 /* JALBingoGame.m */,
 				6DC66CB216064CF3007B0F36 /* JALHistory.h */,
 				6DC66CB316064CF3007B0F36 /* JALHistory.m */,
+				6DC66CBE16065FED007B0F36 /* JALDirection.h */,
+				6DC66CBF16065FED007B0F36 /* JALDirection.m */,
+				6DC66CC116066135007B0F36 /* JALPosition.h */,
+				6DC66CC216066136007B0F36 /* JALPosition.m */,
+				6DC66CC4160666AA007B0F36 /* JALDirectionPole.h */,
+				6DC66CC5160666AB007B0F36 /* JALDirectionPole.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -339,6 +354,9 @@
 				6DC66C9F1605879C007B0F36 /* JALSpace.m in Sources */,
 				6DC66CB116064A76007B0F36 /* JALBingoGame.m in Sources */,
 				6DC66CB416064CF3007B0F36 /* JALHistory.m in Sources */,
+				6DC66CC016065FED007B0F36 /* JALDirection.m in Sources */,
+				6DC66CC316066136007B0F36 /* JALPosition.m in Sources */,
+				6DC66CC6160666AB007B0F36 /* JALDirectionPole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

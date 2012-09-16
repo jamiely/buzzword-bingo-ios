@@ -55,6 +55,10 @@
 -(NSUInteger) indexForRow: (NSUInteger) row andCol: (NSUInteger) col {
     return row * rows + col;
 }
+-(NSUInteger) indexForPosition: (JALPosition*) pos {
+    return [self indexForRow: pos.row andCol: pos.col];
+}
+
 -(BOOL) markWord: (NSString*) word {
     JALSpace *space = [spacesByWord objectForKey: word];
     if(space) {
@@ -63,6 +67,30 @@
     }
     return NO;
 }
+
+-(BOOL) isMarkedAtPosition: (JALPosition*) pos {
+    return [[self spaceAtIndex: [self indexForPosition: pos]] marked];
+}
+
+-(BOOL) isPositionBounded: (JALPosition*) pos {
+    return pos.row < rows && pos.col < cols;
+}
+
+-(NSUInteger) indexOfWord: (NSString*) word {
+    JALSpace *space = [spacesByWord objectForKey: word];
+    return [spaces indexOfObject: space];
+}
+
+-(JALPosition*) positionOfWord: (NSString*) word {
+    return [self positionForIndex: [self indexOfWord: word]];
+}
+
+-(JALPosition*) positionForIndex: (NSUInteger) index {
+    NSUInteger row = index / cols,
+        col = index - (row * rows);
+    return [JALPosition positionWithRow: row andColumn: col];
+}
+
 -(NSArray*) markedSpaces {
     return [spaces ma_select:^BOOL(JALSpace* space) {
         return space.marked;
@@ -73,4 +101,38 @@
         return space.word;
     }];
 }
+
+-(JALPosition*) topLeft {
+    static JALPosition *pos = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        pos = [JALPosition positionWithRow: rows-1 andColumn:0 ];
+    });
+    return pos;
+}
+-(JALPosition*) topRight {
+    static JALPosition *pos = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        pos = [JALPosition positionWithRow: rows-1 andColumn:cols-1 ];
+    });
+    return pos;
+}
+-(JALPosition*) bottomLeft {
+    static JALPosition *pos = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        pos = [JALPosition positionWithRow: 0 andColumn:0 ];
+    });
+    return pos;
+}
+-(JALPosition*) bottomRight {
+    static JALPosition *pos = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        pos = [JALPosition positionWithRow: 0 andColumn:cols-1 ];
+    });
+    return pos;
+}
+
 @end
