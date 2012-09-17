@@ -49,7 +49,6 @@
     for(NSInteger i=0, c = words1.count-1; i<c; i++) {
         NSString *word = [words1 objectAtIndex: i];
         [game playWord: word];
-        NSLog(@"Played word %d \"%@\". Is bingo? %@", i, word, game.isBingo ? @"YES": @"NO");
         STAssertFalse(game.isBingo, @"Is Not bingo");
     }
     
@@ -67,11 +66,27 @@
     for(NSInteger i=0, c = words1.count-1; i<c; i++) {
         NSString *word = [words1 objectAtIndex: i];
         [game playWord: word];
-        NSLog(@"Played word %d \"%@\". Is bingo? %@", i, word, game.isBingo ? @"YES": @"NO");
         STAssertFalse(game.isBingo, @"Is Not bingo");
     }
     
     [game playWord: [words1 lastObject]];
     STAssertTrue(game.isBingo, @"Is bingo");
 }
+-(void) testBingoDiagonally {
+    // Horizontal bingo
+    NSMutableArray *words1 = [NSMutableArray array];
+    for(NSInteger i=0, cols = game.board.cols; i<cols; i++) {
+        [words1 addObject:[[game.board spaceAtRow:i andCol:i] word]];
+    }
+    // Play first n-1 words
+    for(NSInteger i=0, c = words1.count-1; i<c; i++) {
+        NSString *word = [words1 objectAtIndex: i];
+        [game playWord: word];
+        STAssertFalse(game.isBingo, @"Is Not bingo");
+    }
+    
+    [game playWord: [words1 lastObject]];
+    STAssertTrue(game.isBingo, @"Is bingo");
+}
+
 @end

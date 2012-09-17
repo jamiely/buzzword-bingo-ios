@@ -79,7 +79,9 @@
         isBingo = YES;
         NSLog(@"Horizontal Bingo");
     }
-    else {
+    // a diagonal match can only happen when the absolute value of the row and column
+    // match (at least on the default board size)
+    else if(abs(pos.row) == abs(pos.col)) {
         isBingo = [self checkBingoAtPosition: pos onPole: [JALDirectionPole NESW] withMaxSteps: maxSteps] ||
         [self checkBingoAtPosition: pos onPole: [JALDirectionPole NWSE] withMaxSteps: maxSteps];
         if(isBingo) {
