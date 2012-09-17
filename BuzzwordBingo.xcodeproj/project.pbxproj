@@ -31,6 +31,8 @@
 		6DC66CC016065FED007B0F36 /* JALDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CBF16065FED007B0F36 /* JALDirection.m */; };
 		6DC66CC316066136007B0F36 /* JALPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CC216066136007B0F36 /* JALPosition.m */; };
 		6DC66CC6160666AB007B0F36 /* JALDirectionPole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CC5160666AB007B0F36 /* JALDirectionPole.m */; };
+		6DC66CCA1606A2EB007B0F36 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC66CC91606A2EB007B0F36 /* Main_iPad.storyboard */; };
+		6DC66CD11606A40D007B0F36 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CD01606A40D007B0F36 /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,9 @@
 		6DC66CC216066136007B0F36 /* JALPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALPosition.m; path = Models/JALPosition.m; sourceTree = "<group>"; };
 		6DC66CC4160666AA007B0F36 /* JALDirectionPole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JALDirectionPole.h; path = Models/JALDirectionPole.h; sourceTree = "<group>"; };
 		6DC66CC5160666AB007B0F36 /* JALDirectionPole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JALDirectionPole.m; path = Models/JALDirectionPole.m; sourceTree = "<group>"; };
+		6DC66CC91606A2EB007B0F36 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPad.storyboard; path = Storyboards/Main_iPad.storyboard; sourceTree = "<group>"; };
+		6DC66CCF1606A40D007B0F36 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Controllers/MenuViewController.h; sourceTree = "<group>"; };
+		6DC66CD01606A40D007B0F36 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Controllers/MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,8 @@
 		6DC66C6316058157007B0F36 /* BuzzwordBingo */ = {
 			isa = PBXGroup;
 			children = (
+				6DC66CC81606A2C4007B0F36 /* Storyboards */,
+				6DC66CC71606A2B7007B0F36 /* Controllers */,
 				6DC66C9016058444007B0F36 /* Categories */,
 				6DC66C6C16058157007B0F36 /* AppDelegate.h */,
 				6DC66C8C16058170007B0F36 /* Models */,
@@ -225,6 +232,23 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		6DC66CC71606A2B7007B0F36 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DC66CCF1606A40D007B0F36 /* MenuViewController.h */,
+				6DC66CD01606A40D007B0F36 /* MenuViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6DC66CC81606A2C4007B0F36 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6DC66CC91606A2EB007B0F36 /* Main_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DC66C6816058157007B0F36 /* InfoPlist.strings in Resources */,
+				6DC66CCA1606A2EB007B0F36 /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +382,7 @@
 				6DC66CC016065FED007B0F36 /* JALDirection.m in Sources */,
 				6DC66CC316066136007B0F36 /* JALPosition.m in Sources */,
 				6DC66CC6160666AB007B0F36 /* JALDirectionPole.m in Sources */,
+				6DC66CD11606A40D007B0F36 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
