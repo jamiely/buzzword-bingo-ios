@@ -17,6 +17,15 @@
 @implementation WordList
 
 @synthesize words;
+@synthesize name;
+
+-(id) initWithName: (NSString*) _name andWords: (NSArray*) _words {
+    self = [self initWithWords:_words];
+    if(self){
+        name = _name;
+    }
+    return self;
+}
 
 -(id) initWithWords: (NSArray*) _words {
     self = [self init];

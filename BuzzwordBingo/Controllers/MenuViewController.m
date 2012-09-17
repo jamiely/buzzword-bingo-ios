@@ -64,4 +64,13 @@
     return cell;
 }
 
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch(indexPath.row) {
+        case 0: { // play game
+            [self performSegueWithIdentifier: @"NewGameSegue" sender:nil];
+            break;
+        }
+    }
+}
+
 @end

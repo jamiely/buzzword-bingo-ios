@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface WordList : NSObject
+-(id) initWithName: (NSString*) _name andWords: (NSArray*) _words;
 -(id) initWithWords: (NSArray*) _words;
 -(NSArray*) take: (NSUInteger) nCountWords;
 @property (nonatomic, strong, readonly) NSArray* words;
+@property (nonatomic, strong) NSString *name;
 @end
