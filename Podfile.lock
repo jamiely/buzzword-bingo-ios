@@ -1,11 +1,14 @@
 
 PODS:
+- AQGridView (1.3)
 - MACollectionUtilities (0.0.1)
 
 DEPENDENCIES:
+- AQGridView
 - MACollectionUtilities
 
 SPEC CHECKSUMS:
+  AQGridView: ee436c64bc4a972ca7f3ce99971c0204af9e65ea
   MACollectionUtilities: b0f5d6d0b03a017d02f010a16d065d3588825443
 
 COCOAPODS: 0.14.0

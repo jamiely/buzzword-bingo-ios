@@ -7,8 +7,6 @@
 //
 
 #import "JALBingoGame.h"
-#import "JALBoard.h"
-#import "JALHistory.h"
 #import "JALDirectionPole.h"
 #import "MACollectionUtilities.h"
 

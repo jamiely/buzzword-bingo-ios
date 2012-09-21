@@ -7,10 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class JALBoard;
-@class JALHistory;
-@class WordList;
+#import "JALBoard.h"
+#import "JALHistory.h"
+#import "WordList.h"
 
 @interface JALBingoGame : NSObject
 

@@ -9,6 +9,7 @@
 #import "WordListViewController.h"
 #import "Content.h"
 #import "WordList.h"
+#import "BoardViewController.h"
 
 @interface WordListViewController () {
     WordList *selectedList;
@@ -19,29 +20,6 @@
 @implementation WordListViewController
 @synthesize listTableView;
 @synthesize wordTableView;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)viewDidUnload
-{
-    [self setListTableView:nil];
-    [self setWordTableView:nil];
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -83,6 +61,15 @@
     
     selectedList = [[[Content main] wordLists] objectAtIndex: indexPath.row];
     [wordTableView reloadData];
+}
+
+#pragma mark - Segue functions
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.destinationViewController isKindOfClass: [BoardViewController class]]) {
+        BoardViewController *controller = segue.destinationViewController;
+        controller.game = [[JALBingoGame alloc] initWithWordList: selectedList];
+    }
 }
 
 @end
