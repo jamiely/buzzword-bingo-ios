@@ -31,5 +31,6 @@
 
 @property (nonatomic, assign, readonly) NSUInteger rows;
 @property (nonatomic, assign, readonly) NSUInteger cols;
+@property (nonatomic, strong, readonly) NSArray *words;
 @property (nonatomic, strong) NSArray *spaces;
 @end

@@ -8,7 +8,15 @@
 
 #import "BingoGridCell.h"
 
+@interface BingoGridCell() {
+    UILabel *label;
+}
+
+@end
+
 @implementation BingoGridCell
+
+@synthesize word;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -20,7 +28,7 @@
 }
 
 - (id) initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier];
     if (self) {
         [self initialize: frame];
     }
@@ -28,9 +36,44 @@
 }
 
 -(void) initialize:(CGRect) frame {
-    UILabel *lbl = [[UILabel alloc] initWithFrame: frame];
-    lbl.text = @"blah";
-    [self addSubview: lbl];
+    word = @"blah";
+    label = [[UILabel alloc] initWithFrame: frame];
+    label.text = word;
+    label.textAlignment = UITextAlignmentCenter;
+    label.backgroundColor = [UIColor clearColor];
+    [self.contentView addSubview: label];
+    [self setRandomColor];
+}
+
+- (void) setRandomColor {
+    self.contentView.backgroundColor = [UIColor redColor];
+    switch(arc4random()%5) {
+        case 0: {
+            self.contentView.backgroundColor = [UIColor blueColor];
+            break;
+        }
+        case 1: {
+            self.contentView.backgroundColor = [UIColor yellowColor];
+            break;
+        }
+        case 2: {
+            self.contentView.backgroundColor = [UIColor greenColor];
+            break;
+        }
+        case 3: {
+            self.contentView.backgroundColor = [UIColor whiteColor];
+            break;
+        }
+        case 4: {
+            self.contentView.backgroundColor = [UIColor purpleColor];
+            break;
+        }
+    }
+}
+
+- (void) setWord:(NSString *)_word {
+    word = _word;
+    label.text = word;
 }
 
 /*

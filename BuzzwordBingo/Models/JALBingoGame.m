@@ -130,4 +130,8 @@
     
 }
 
+- (NSArray*) boardWords {
+    return board.words;
+}
+
 @end

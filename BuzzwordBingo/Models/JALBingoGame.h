@@ -22,6 +22,7 @@
 
 @property (nonatomic, strong) JALHistory *history;
 @property (nonatomic, strong) JALBoard *board;
+@property (nonatomic, strong, readonly) NSArray *boardWords;
 @property (nonatomic, strong) WordList *wordList;
 @property (nonatomic, assign, readonly) BOOL isBingo;
 

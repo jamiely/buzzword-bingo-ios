@@ -26,13 +26,14 @@
 @synthesize spaces;
 @synthesize cols;
 @synthesize rows;
+@synthesize words;
 
 -(id) initWithWordList: (WordList*) list {
     self = [self init];
     if(self) {
         rows = 5;
         cols = 5;
-        NSArray *words = [list take: rows * cols];
+        words = [list take: rows * cols];
         NSMutableDictionary *byWord = [NSMutableDictionary dictionary];
         spaces = [words ma_map:^id(NSString* word) {
             JALSpace *space = [[JALSpace alloc] initWithWord: word];

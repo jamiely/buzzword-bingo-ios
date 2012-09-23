@@ -9,5 +9,6 @@
 #import "AQGridViewCell.h"
 
 @interface BingoGridCell : AQGridViewCell
-
+- (void) setRandomColor;
+@property (nonatomic, strong) NSString *word;
 @end
