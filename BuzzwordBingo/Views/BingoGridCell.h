@@ -10,5 +10,6 @@
 
 @interface BingoGridCell : AQGridViewCell
 - (void) setRandomColor;
+- (void) setMarked: (BOOL) val;
 @property (nonatomic, strong) NSString *word;
 @end

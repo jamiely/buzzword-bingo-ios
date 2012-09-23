@@ -8,6 +8,7 @@
 
 #import "BoardViewController.h"
 #import "BingoGridCell.h"
+#import "JALSpace.h"
 
 @interface BoardViewController () {
     CGSize spaceSize;
@@ -54,13 +55,34 @@
                                     reuseIdentifier:@"StandardCell"];
     }
     
-    cell.word = [[game boardWords] objectAtIndex: index];
-    [cell setRandomColor];
+    JALSpace *space = [self spaceAtIndex: index];
+    cell.word = [space word];
+    [cell setMarked: space.marked];
     return cell;
+}
+
+- (void) gridView:(AQGridView *)aGridView didSelectItemAtIndex:(NSUInteger)index {
+    [game playWord: [self wordAtIndex: index]];
+    [gridView reloadItemsAtIndices: [NSIndexSet indexSetWithIndex:index]
+                     withAnimation: AQGridViewItemAnimationFade];
+    if(game.isBingo) {
+        [[[UIAlertView alloc] initWithTitle:@"Alert" message:@"BINGO" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+    }
 }
 
 - (void)viewDidUnload {
     [self setGridView:nil];
     [super viewDidUnload];
 }
+
+#pragma mark - Model functions
+
+-(NSString*) wordAtIndex: (NSUInteger) index {
+    return [[self spaceAtIndex: index] word];
+}
+
+-(JALSpace*) spaceAtIndex: (NSUInteger) index {
+    return [game.board spaceAtIndex: index];
+}
+
 @end

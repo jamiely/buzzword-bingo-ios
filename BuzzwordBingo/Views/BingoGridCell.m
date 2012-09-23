@@ -46,11 +46,15 @@
     
     // background
     [self.contentView addSubview: label];
-    [self setRandomColor];
+    self.contentView.backgroundColor = [UIColor whiteColor];
     
     // create a border
     self.layer.borderColor = [UIColor blackColor].CGColor;
     self.layer.borderWidth = 1.f;
+}
+
+- (void) setMarked: (BOOL) val {
+    self.contentView.backgroundColor = val ? [UIColor redColor] : [UIColor whiteColor];
 }
 
 - (void) setRandomColor {
