@@ -36,13 +36,21 @@
 }
 
 -(void) initialize:(CGRect) frame {
-    word = @"blah";
+    word = @"";
+    
+    // label setup
     label = [[UILabel alloc] initWithFrame: frame];
     label.text = word;
     label.textAlignment = UITextAlignmentCenter;
     label.backgroundColor = [UIColor clearColor];
+    
+    // background
     [self.contentView addSubview: label];
     [self setRandomColor];
+    
+    // create a border
+    self.layer.borderColor = [UIColor blackColor].CGColor;
+    self.layer.borderWidth = 1.f;
 }
 
 - (void) setRandomColor {

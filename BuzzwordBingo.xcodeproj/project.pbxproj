@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4541DDF1CB6A496185CA2862 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A49FBB575B4B0D8735F88A /* libPods.a */; };
+		6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */; };
 		6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5D16058157007B0F36 /* UIKit.framework */; };
 		6DC66C6016058157007B0F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5F16058157007B0F36 /* Foundation.framework */; };
 		6DC66C6216058157007B0F36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C6116058157007B0F36 /* CoreGraphics.framework */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		09EC1AF2EB2D49FC8AD35A85 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		13A49FBB575B4B0D8735F88A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6DC66C5916058157007B0F36 /* BuzzwordBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzwordBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC66C5D16058157007B0F36 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6DC66C5F16058157007B0F36 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */,
 				6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */,
 				6DC66C6016058157007B0F36 /* Foundation.framework in Frameworks */,
 				6DC66C6216058157007B0F36 /* CoreGraphics.framework in Frameworks */,
@@ -153,6 +156,7 @@
 		6DC66C5C16058157007B0F36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */,
 				6DC66C5D16058157007B0F36 /* UIKit.framework */,
 				6DC66C5F16058157007B0F36 /* Foundation.framework */,
 				6DC66C6116058157007B0F36 /* CoreGraphics.framework */,
