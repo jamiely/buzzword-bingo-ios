@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="1131" y="-170"/>
         </scene>
-        <!--Board View Controller-->
+        <!--Board View Controller - Word List Name-->
         <scene sceneID="HkR-zd-CJL">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPt-0O-MPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,7 +68,9 @@
                             <outlet property="delegate" destination="Vo7-Az-bkR" id="wdL-TZ-2Wh"/>
                         </connections>
                     </scrollView>
-                    <navigationItem key="navigationItem" id="ogu-9d-RcU"/>
+                    <navigationItem key="navigationItem" title="Word List Name" id="ogu-9d-RcU">
+                        <barButtonItem key="backBarButtonItem" id="hk9-QA-Br1"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="gridView" destination="tHa-bx-TpZ" id="7sz-KL-ZFt"/>
                     </connections>
@@ -76,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="2902" y="-170"/>
         </scene>
-        <!--Word List View Controller-->
+        <!--Word List View Controller - Select the Word List-->
         <scene sceneID="OSu-cF-xdU">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIw-0T-3jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,8 +162,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ECU-d0-ycK">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="6hi-Xj-0nn">
+                    <navigationItem key="navigationItem" title="Select the Word List" id="ECU-d0-ycK">
+                        <barButtonItem key="rightBarButtonItem" title="Select" id="6hi-Xj-0nn">
                             <connections>
                                 <action selector="onDone:" destination="vfw-VP-PU4" id="han-ci-lPP"/>
                                 <segue destination="Vo7-Az-bkR" kind="push" id="CEn-kg-PAc"/>
@@ -170,6 +172,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="listTableView" destination="3gZ-es-MHY" id="DVW-3I-QF6"/>
+                        <outlet property="selectButton" destination="6hi-Xj-0nn" id="VAZ-4b-Fu8"/>
                         <outlet property="wordTableView" destination="0Vf-eD-mqp" id="E07-Rq-oOj"/>
                     </connections>
                 </viewController>

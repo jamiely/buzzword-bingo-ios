@@ -11,6 +11,7 @@
 #import "JALSpace.h"
 
 @interface BoardViewController () {
+    // The size of each space on the bingo board
     CGSize spaceSize;
 }
 @end
@@ -23,12 +24,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = game.wordList.name;
+    
+    [self setupGridView];
+}
+
+- (void) setupGridView {
+    [gridView sizeToFit];
+    
     // Calculate the size that each space should be
     spaceSize = gridView.frame.size;
     spaceSize.width /= (float)game.board.cols;
-    CGFloat height = self.navigationController.navigationBar.frame.size.height;
-    //spaceSize.height -= self.navigationController.view.frame.size.height;
-    spaceSize.height -= height;
+    
+    spaceSize.height -= self.navigationController.navigationBar.frame.size.height;
     spaceSize.height /= (float)game.board.rows;
 
     // Adjust the content size of the grid view
@@ -49,10 +57,12 @@
 }
 
 - (AQGridViewCell *)gridView:(AQGridView *)aGridView cellForItemAtIndex:(NSUInteger)index {
-    BingoGridCell *cell = (BingoGridCell*)[aGridView dequeueReusableCellWithIdentifier: @"StandardCell"];
+    static NSString *cidStandard = @"StandardCell";
+    
+    BingoGridCell *cell = (BingoGridCell*)[aGridView dequeueReusableCellWithIdentifier: cidStandard];
     if(!cell) {
         cell = [[BingoGridCell alloc] initWithFrame: CGRectMake(0, 0, spaceSize.width, spaceSize.height)
-                                    reuseIdentifier:@"StandardCell"];
+                                    reuseIdentifier: cidStandard];
     }
     
     JALSpace *space = [self spaceAtIndex: index];

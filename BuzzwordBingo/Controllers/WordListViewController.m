@@ -20,11 +20,27 @@
 @implementation WordListViewController
 @synthesize listTableView;
 @synthesize wordTableView;
+@synthesize selectButton;
+
+#pragma mark - View functions
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    selectButton.enabled = NO;
+}
+
+- (void)viewDidUnload {
+    [self setSelectButton:nil];
+    [super viewDidUnload];
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
 	return YES;
 }
+
+#pragma mark - Table delegate functions
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -61,6 +77,8 @@
     
     selectedList = [[[Content main] wordLists] objectAtIndex: indexPath.row];
     [wordTableView reloadData];
+    
+    selectButton.enabled = YES;
 }
 
 #pragma mark - Segue functions

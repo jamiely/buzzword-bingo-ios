@@ -11,5 +11,6 @@
 @interface WordListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *listTableView;
 @property (strong, nonatomic) IBOutlet UITableView *wordTableView;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *selectButton;
 
 @end
