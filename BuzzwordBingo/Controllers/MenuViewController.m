@@ -7,9 +7,12 @@
 //
 
 #import "MenuViewController.h"
+#import "Constants.h"
+#import "WordListViewController.h"
 
 @interface MenuViewController () {
     NSArray *data;
+    BingoAppMode appMode;
 }
 
 @end
@@ -36,7 +39,7 @@
     tableView.backgroundView = nil;
     
     // Load the menu data
-	data = [@"New Game,Manage Word Lists,Contact" componentsSeparatedByString:@","];
+	data = [@"User Mode,Presenter Mode,Manage Word Lists,Contact" componentsSeparatedByString:@","];
 }
 
 - (void)viewDidUnload
@@ -65,11 +68,17 @@
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch(indexPath.row) {
-        case 0: { // play game
-            [self performSegueWithIdentifier: @"NewGameSegue" sender:nil];
-            break;
-        }
+    if(indexPath.row <= 1) {
+        appMode = indexPath.row == 0 ? BingoAppModeUser : BingoAppModePresenter;
+        [self performSegueWithIdentifier: @"NewGameSegue" sender: nil];
+    }
+}
+
+#pragma mark - Segue functions
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([[segue destinationViewController] respondsToSelector: @selector(setAppMode:)]) {
+        [[segue destinationViewController] setAppMode: appMode];
     }
 }
 

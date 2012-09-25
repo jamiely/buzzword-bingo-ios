@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12B19" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="UHz-8J-iv9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="UHz-8J-iv9">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller-->
         <scene sceneID="jpr-pl-5oR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m1b-7i-igO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Jpn-dY-rNH" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mT-OP-Dwn">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
@@ -21,7 +19,7 @@
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="StandardTableCell" textLabel="HH2-Lw-eQ0" style="IBUITableViewCellStyleDefault" id="Yj8-9B-lEs">
                                         <rect key="frame" x="0.0" y="34" width="280" height="46"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="260" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -52,36 +50,86 @@
                         <segue destination="vfw-VP-PU4" kind="push" identifier="NewGameSegue" id="E5U-bq-NHY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1b-7i-igO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1131" y="-170"/>
         </scene>
         <!--Board View Controller - Word List Name-->
         <scene sceneID="HkR-zd-CJL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nPt-0O-MPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Vo7-Az-bkR" customClass="BoardViewController" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="tHa-bx-TpZ" customClass="AQGridView">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="h01-qu-RPX" customClass="AQGridView">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <connections>
-                            <outlet property="dataSource" destination="Vo7-Az-bkR" id="gxI-Kv-juL"/>
-                            <outlet property="delegate" destination="Vo7-Az-bkR" id="wdL-TZ-2Wh"/>
+                            <outlet property="dataSource" destination="Vo7-Az-bkR" id="zdy-gU-jQr"/>
+                            <outlet property="delegate" destination="Vo7-Az-bkR" id="pIS-K4-bK5"/>
                         </connections>
                     </scrollView>
                     <navigationItem key="navigationItem" title="Word List Name" id="ogu-9d-RcU">
                         <barButtonItem key="backBarButtonItem" id="hk9-QA-Br1"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="gridView" destination="tHa-bx-TpZ" id="7sz-KL-ZFt"/>
+                        <outlet property="gridView" destination="h01-qu-RPX" id="3T0-pr-jfw"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nPt-0O-MPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2902" y="-170"/>
+            <point key="canvasLocation" x="3154" y="-650"/>
+        </scene>
+        <!--Presenter View Controller-->
+        <scene sceneID="Xy8-6e-JOH">
+            <objects>
+                <viewController id="gyI-Qp-EIV" customClass="PresenterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Emy-Kx-CZF">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Tf-kQ-mXC">
+                                <rect key="frame" x="0.0" y="44" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h9x-hK-s4x" appends="YES" id="9CE-I4-miX"/>
+                                </connections>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" id="Zen-JJ-jIS">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Word List Name" id="kMZ-hT-1EI">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="7cq-JD-tZK">
+                                            <connections>
+                                                <action selector="onDone:" destination="gyI-Qp-EIV" id="SXo-D7-TqS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="4Tf-kQ-mXC" id="l7Y-3q-uur"/>
+                        <outlet property="navigationBar" destination="Zen-JJ-jIS" id="3w6-3b-BUe"/>
+                        <outlet property="navigationItem" destination="kMZ-hT-1EI" id="Pm8-pX-FGC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLN-N8-xGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="h9x-hK-s4x">
+                    <connections>
+                        <action selector="handleGesture:" destination="gyI-Qp-EIV" id="dWy-eE-nx5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3154" y="557"/>
         </scene>
         <!--Word List View Controller - Select the Word List-->
         <scene sceneID="OSu-cF-xdU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zIw-0T-3jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="vfw-VP-PU4" customClass="WordListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MgN-bp-SSO">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
@@ -116,7 +164,7 @@
                                     <outlet property="delegate" destination="vfw-VP-PU4" id="11d-e7-jK6"/>
                                 </connections>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Vf-eD-mqp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0Vf-eD-mqp">
                                 <rect key="frame" x="387" y="37" width="381" height="923"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -165,24 +213,25 @@
                     <navigationItem key="navigationItem" title="Select the Word List" id="ECU-d0-ycK">
                         <barButtonItem key="rightBarButtonItem" title="Select" id="6hi-Xj-0nn">
                             <connections>
-                                <action selector="onDone:" destination="vfw-VP-PU4" id="han-ci-lPP"/>
-                                <segue destination="Vo7-Az-bkR" kind="push" id="CEn-kg-PAc"/>
+                                <action selector="onSelect:" destination="vfw-VP-PU4" id="uRO-zf-0yV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="listTableView" destination="3gZ-es-MHY" id="DVW-3I-QF6"/>
-                        <outlet property="selectButton" destination="6hi-Xj-0nn" id="VAZ-4b-Fu8"/>
+                        <outlet property="selectButton" destination="6hi-Xj-0nn" id="85T-41-skQ"/>
                         <outlet property="wordTableView" destination="0Vf-eD-mqp" id="E07-Rq-oOj"/>
+                        <segue destination="gyI-Qp-EIV" kind="modal" identifier="PresenterSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="2ee-qx-XPF"/>
+                        <segue destination="Vo7-Az-bkR" kind="push" identifier="UserSegue" id="iJH-cy-sBD"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIw-0T-3jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1998" y="-170"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="13j-d1-sff">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Crr-bm-nKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="UHz-8J-iv9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sj7-pV-8gn">
@@ -194,6 +243,7 @@
                         <segue destination="Jpn-dY-rNH" kind="relationship" relationship="rootViewController" id="0sc-n6-HyC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Crr-bm-nKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="157" y="-170"/>
         </scene>
@@ -218,10 +268,21 @@
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>
+        <class className="PresenterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PresenterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="handleGesture:"/>
+                <relationship kind="action" name="onDone:"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="navigationBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
         <class className="WordListViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WordListViewController.h"/>
             <relationships>
+                <relationship kind="action" name="onSelect:"/>
                 <relationship kind="outlet" name="listTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="selectButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="wordTableView" candidateClass="UITableView"/>
             </relationships>
         </class>

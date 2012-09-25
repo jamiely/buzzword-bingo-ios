@@ -21,6 +21,7 @@
 @synthesize listTableView;
 @synthesize wordTableView;
 @synthesize selectButton;
+@synthesize appMode;
 
 #pragma mark - View functions
 
@@ -37,7 +38,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return YES;
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 #pragma mark - Table delegate functions
@@ -84,10 +85,14 @@
 #pragma mark - Segue functions
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.destinationViewController isKindOfClass: [BoardViewController class]]) {
+    if([segue.destinationViewController respondsToSelector: @selector(setGame:)]) {
         BoardViewController *controller = segue.destinationViewController;
-        controller.game = [[JALBingoGame alloc] initWithWordList: selectedList];
+        [controller setGame: [[JALBingoGame alloc] initWithWordList: selectedList]];
     }
 }
 
+- (IBAction)onSelect:(id)sender {
+    NSString *identifier = appMode == BingoAppModeUser ? @"UserSegue" : @"PresenterSegue";
+    [self performSegueWithIdentifier: identifier sender: self];
+}
 @end

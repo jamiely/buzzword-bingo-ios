@@ -38,6 +38,7 @@
 		6DC66CE31606AF48007B0F36 /* Content.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC66CE21606AF48007B0F36 /* Content.m */; };
 		6DD8EF66160C79DE00D49027 /* BoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8EF65160C79DE00D49027 /* BoardViewController.m */; };
 		6DD8EF73160C7D3C00D49027 /* BingoGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8EF72160C7D3C00D49027 /* BingoGridCell.m */; };
+		6DF41C0A1611305A006ED729 /* PresenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF41C091611305A006ED729 /* PresenterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,9 @@
 		6DD8EF65160C79DE00D49027 /* BoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardViewController.m; path = Controllers/BoardViewController.m; sourceTree = "<group>"; };
 		6DD8EF71160C7D3C00D49027 /* BingoGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BingoGridCell.h; path = Views/BingoGridCell.h; sourceTree = "<group>"; };
 		6DD8EF72160C7D3C00D49027 /* BingoGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BingoGridCell.m; path = Views/BingoGridCell.m; sourceTree = "<group>"; };
+		6DF41C0616112DF0006ED729 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Controllers/Constants.h; sourceTree = "<group>"; };
+		6DF41C081611305A006ED729 /* PresenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresenterViewController.h; path = Controllers/PresenterViewController.h; sourceTree = "<group>"; };
+		6DF41C091611305A006ED729 /* PresenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresenterViewController.m; path = Controllers/PresenterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +264,9 @@
 				6DC66CDE1606AE34007B0F36 /* WordListViewController.m */,
 				6DD8EF64160C79DE00D49027 /* BoardViewController.h */,
 				6DD8EF65160C79DE00D49027 /* BoardViewController.m */,
+				6DF41C0616112DF0006ED729 /* Constants.h */,
+				6DF41C081611305A006ED729 /* PresenterViewController.h */,
+				6DF41C091611305A006ED729 /* PresenterViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -419,6 +426,7 @@
 				6DC66CE31606AF48007B0F36 /* Content.m in Sources */,
 				6DD8EF66160C79DE00D49027 /* BoardViewController.m in Sources */,
 				6DD8EF73160C7D3C00D49027 /* BingoGridCell.m in Sources */,
+				6DF41C0A1611305A006ED729 /* PresenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
