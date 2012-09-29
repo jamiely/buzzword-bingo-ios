@@ -10,6 +10,8 @@
 		4541DDF1CB6A496185CA2862 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A49FBB575B4B0D8735F88A /* libPods.a */; };
 		6D7BFEEE1616931900E8432E /* WordListManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFEED1616931900E8432E /* WordListManagerViewController.m */; };
 		6D7BFEF21616969200E8432E /* WordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFEF11616969200E8432E /* WordsViewController.m */; };
+		6D7BFF4116169AC000E8432E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BFF4016169AC000E8432E /* CoreData.framework */; };
+		6D7BFF4516169AEB00E8432E /* Bingo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4316169AEB00E8432E /* Bingo.xcdatamodeld */; };
 		6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */; };
 		6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5D16058157007B0F36 /* UIKit.framework */; };
 		6DC66C6016058157007B0F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5F16058157007B0F36 /* Foundation.framework */; };
@@ -60,6 +62,8 @@
 		6D7BFEED1616931900E8432E /* WordListManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordListManagerViewController.m; path = Controllers/WordListManagerViewController.m; sourceTree = "<group>"; };
 		6D7BFEF01616969200E8432E /* WordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsViewController.h; path = Controllers/WordsViewController.h; sourceTree = "<group>"; };
 		6D7BFEF11616969200E8432E /* WordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordsViewController.m; path = Controllers/WordsViewController.m; sourceTree = "<group>"; };
+		6D7BFF4016169AC000E8432E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6D7BFF4416169AEB00E8432E /* Bingo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bingo.xcdatamodel; sourceTree = "<group>"; };
 		6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6DC66C5916058157007B0F36 /* BuzzwordBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzwordBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC66C5D16058157007B0F36 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -122,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7BFF4116169AC000E8432E /* CoreData.framework in Frameworks */,
 				6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */,
 				6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */,
 				6DC66C6016058157007B0F36 /* Foundation.framework in Frameworks */,
@@ -143,9 +148,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D7BFF4216169AD800E8432E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6D7BFF4316169AEB00E8432E /* Bingo.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		6DC66C4E16058157007B0F36 = {
 			isa = PBXGroup;
 			children = (
+				6D7BFF4016169AC000E8432E /* CoreData.framework */,
 				6DC66C6316058157007B0F36 /* BuzzwordBingo */,
 				6DC66C7B16058157007B0F36 /* BuzzwordBingoTests */,
 				6DC66C5C16058157007B0F36 /* Frameworks */,
@@ -179,6 +193,7 @@
 		6DC66C6316058157007B0F36 /* BuzzwordBingo */ = {
 			isa = PBXGroup;
 			children = (
+				6D7BFF4216169AD800E8432E /* Data */,
 				6DD8EF6F160C7D1600D49027 /* Views */,
 				6DC66CC81606A2C4007B0F36 /* Storyboards */,
 				6DC66CC71606A2B7007B0F36 /* Controllers */,
@@ -439,6 +454,7 @@
 				6DF41C0A1611305A006ED729 /* PresenterViewController.m in Sources */,
 				6D7BFEEE1616931900E8432E /* WordListManagerViewController.m in Sources */,
 				6D7BFEF21616969200E8432E /* WordsViewController.m in Sources */,
+				6D7BFF4516169AEB00E8432E /* Bingo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +639,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D7BFF4316169AEB00E8432E /* Bingo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D7BFF4416169AEB00E8432E /* Bingo.xcdatamodel */,
+			);
+			currentVersion = 6D7BFF4416169AEB00E8432E /* Bingo.xcdatamodel */;
+			name = Bingo.xcdatamodeld;
+			path = Data/Bingo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6DC66C5016058157007B0F36 /* Project object */;
 }

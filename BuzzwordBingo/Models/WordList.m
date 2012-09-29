@@ -17,22 +17,15 @@
 @implementation WordList
 
 @synthesize words;
-@synthesize name;
+@dynamic name;
+@dynamic wordsString;
 
--(id) initWithName: (NSString*) _name andWords: (NSArray*) _words {
-    self = [self initWithWords:_words];
-    if(self){
-        name = _name;
-    }
-    return self;
+-(NSArray*) words {
+    return [self.wordsString componentsSeparatedByString: @","];
 }
 
--(id) initWithWords: (NSArray*) _words {
-    self = [self init];
-    if(self){
-        words = _words;
-    }
-    return self;
+-(void) setWords: (NSArray*) _words {
+    self.wordsString = [_words componentsJoinedByString: @","];
 }
 
 -(NSArray*) take: (NSUInteger) nCountWords {
@@ -42,6 +35,18 @@
     if(rng.length > nCountWords) rng.length = nCountWords;
     
     return [[self.words jal_shuffle] subarrayWithRange: rng];
+}
+
++ (WordList*) wordListInManagedObjectContext: (NSManagedObjectContext*) context {
+    return (WordList*) [NSEntityDescription insertNewObjectForEntityForName: @"WordList" inManagedObjectContext: context];
+}
+
++ (WordList*) wordListInManagedObjectContext: (NSManagedObjectContext*) context
+    withName: (NSString*) _name andWordsString: (NSString*) _wordsString {
+    WordList *list = [WordList wordListInManagedObjectContext:context];
+    list.name = _name;
+    list.wordsString = _wordsString;
+    return list;
 }
 
 @end

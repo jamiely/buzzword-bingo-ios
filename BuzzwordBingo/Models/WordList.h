@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface WordList : NSObject
--(id) initWithName: (NSString*) _name andWords: (NSArray*) _words;
--(id) initWithWords: (NSArray*) _words;
+@interface WordList : NSManagedObject
+
 -(NSArray*) take: (NSUInteger) nCountWords;
 @property (nonatomic, strong, readonly) NSArray* words;
 @property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString * wordsString;
+
++ (WordList*) wordListInManagedObjectContext: (NSManagedObjectContext*) context;
++ (WordList*) wordListInManagedObjectContext: (NSManagedObjectContext*) context
+    withName: (NSString*) _name andWordsString: (NSString*) _wordsString;
+
 @end
