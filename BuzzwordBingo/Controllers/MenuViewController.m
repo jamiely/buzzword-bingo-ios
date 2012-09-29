@@ -68,9 +68,19 @@
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(indexPath.row <= 1) {
-        appMode = indexPath.row == 0 ? BingoAppModeUser : BingoAppModePresenter;
-        [self performSegueWithIdentifier: @"NewGameSegue" sender: nil];
+    switch(indexPath.row) {
+        case 0: {
+            // fall through!!
+        }
+        case 1: {
+            appMode = indexPath.row == 0 ? BingoAppModeUser : BingoAppModePresenter;
+            [self performSegueWithIdentifier: @"NewGameSegue" sender: nil];
+            break;
+        }
+        case 2: {
+            [self performSegueWithIdentifier: @"WordListManagerSegue" sender: nil];
+            break;
+        }
     }
 }
 
