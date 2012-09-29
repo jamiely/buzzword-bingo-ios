@@ -41,6 +41,7 @@
     // label setup
     label = [[UILabel alloc] initWithFrame: frame];
     label.text = word;
+    label.numberOfLines = 5;
     label.textAlignment = UITextAlignmentCenter;
     label.backgroundColor = [UIColor clearColor];
     
