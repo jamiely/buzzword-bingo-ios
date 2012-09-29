@@ -12,6 +12,8 @@
 		6D7BFEF21616969200E8432E /* WordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFEF11616969200E8432E /* WordsViewController.m */; };
 		6D7BFF4116169AC000E8432E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BFF4016169AC000E8432E /* CoreData.framework */; };
 		6D7BFF4516169AEB00E8432E /* Bingo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4316169AEB00E8432E /* Bingo.xcdatamodeld */; };
+		6D7BFF4B16170ADB00E8432E /* ListDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */; };
+		6D7BFF4E16174C9400E8432E /* WordsDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */; };
 		6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */; };
 		6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5D16058157007B0F36 /* UIKit.framework */; };
 		6DC66C6016058157007B0F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5F16058157007B0F36 /* Foundation.framework */; };
@@ -64,6 +66,10 @@
 		6D7BFEF11616969200E8432E /* WordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordsViewController.m; path = Controllers/WordsViewController.m; sourceTree = "<group>"; };
 		6D7BFF4016169AC000E8432E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6D7BFF4416169AEB00E8432E /* Bingo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bingo.xcdatamodel; sourceTree = "<group>"; };
+		6D7BFF4916170ADB00E8432E /* ListDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListDownloadViewController.h; path = Controllers/ListDownloadViewController.h; sourceTree = "<group>"; };
+		6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListDownloadViewController.m; path = Controllers/ListDownloadViewController.m; sourceTree = "<group>"; };
+		6D7BFF4C16174C9400E8432E /* WordsDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsDownloadViewController.h; path = Controllers/WordsDownloadViewController.h; sourceTree = "<group>"; };
+		6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordsDownloadViewController.m; path = Controllers/WordsDownloadViewController.m; sourceTree = "<group>"; };
 		6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6DC66C5916058157007B0F36 /* BuzzwordBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzwordBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC66C5D16058157007B0F36 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -292,6 +298,10 @@
 				6D7BFEED1616931900E8432E /* WordListManagerViewController.m */,
 				6D7BFEF01616969200E8432E /* WordsViewController.h */,
 				6D7BFEF11616969200E8432E /* WordsViewController.m */,
+				6D7BFF4916170ADB00E8432E /* ListDownloadViewController.h */,
+				6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */,
+				6D7BFF4C16174C9400E8432E /* WordsDownloadViewController.h */,
+				6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -455,6 +465,8 @@
 				6D7BFEEE1616931900E8432E /* WordListManagerViewController.m in Sources */,
 				6D7BFEF21616969200E8432E /* WordsViewController.m in Sources */,
 				6D7BFF4516169AEB00E8432E /* Bingo.xcdatamodeld in Sources */,
+				6D7BFF4B16170ADB00E8432E /* ListDownloadViewController.m in Sources */,
+				6D7BFF4E16174C9400E8432E /* WordsDownloadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

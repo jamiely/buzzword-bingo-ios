@@ -12,7 +12,7 @@
 @interface WordList : NSManagedObject
 
 -(NSArray*) take: (NSUInteger) nCountWords;
-@property (nonatomic, strong, readonly) NSArray* words;
+@property (nonatomic, strong) NSArray* words;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString * wordsString;
 

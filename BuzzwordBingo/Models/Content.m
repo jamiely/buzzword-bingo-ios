@@ -21,9 +21,7 @@
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
     // Load from core data if possible
-    if(!wordLists) {
-        wordLists = [delegate wordLists];
-    }
+    wordLists = [delegate wordLists];
     
     // Otherwise load some defaults
     if(!wordLists || wordLists.count == 0) {

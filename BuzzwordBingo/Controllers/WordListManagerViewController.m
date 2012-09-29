@@ -28,9 +28,19 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void) viewDidLoad {
     [super viewDidLoad];
+    [self loadWordLists];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear: animated];
+    
+    [self loadWordLists];
+    [self.tableView reloadData];
+}
+
+- (void) loadWordLists {
     wordLists = [NSMutableArray arrayWithArray: [[Content main] wordLists]];
 }
 
