@@ -10,4 +10,6 @@
 
 @interface ListDownloadViewController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *listNames;
+
 @end

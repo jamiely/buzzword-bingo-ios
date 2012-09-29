@@ -9,6 +9,9 @@
 #import "WordListManagerViewController.h"
 #import "WordsViewController.h"
 #import "Content.h"
+#import "AppDelegate.h"
+#import "MACollectionUtilities.h"
+#import "ListDownloadViewController.h"
 
 @interface WordListManagerViewController () {
     NSMutableArray *wordLists;
@@ -82,8 +85,19 @@
      forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if(editingStyle == UITableViewCellEditingStyleDelete) {
+        WordList *wordList = [wordLists objectAtIndex: indexPath.row];
         [wordLists removeObjectAtIndex: indexPath.row];
+        [self deleteWordList: wordList];
         [tableView deleteRowsAtIndexPaths: @[indexPath] withRowAnimation: UITableViewRowAnimationFade];
+    }
+}
+
+- (void) deleteWordList: (WordList*) list {
+    NSManagedObjectContext *context = [(AppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    [context deleteObject: list];
+    NSError *error;
+    if(![context save: &error]) {
+        NSLog(@"Could not save: %@", error);
     }
 }
 
@@ -104,6 +118,15 @@
     if([controller respondsToSelector:@selector(setWordList:)]) {
         [controller setWordList: selectedList];
     }
+    if([controller respondsToSelector:@selector(setListNames:)]) {
+        [controller setListNames: [NSMutableArray arrayWithArray:[self listNames]]];
+    }
+}
+
+- (NSArray*) listNames {
+    return [wordLists ma_map:^id(id obj) {
+        return [obj name];
+    }];
 }
 
 @end

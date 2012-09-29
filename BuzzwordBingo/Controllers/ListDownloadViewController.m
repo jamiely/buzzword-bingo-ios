@@ -14,13 +14,15 @@
 @interface ListDownloadViewController () {
     NSURLConnection *connection;
     NSURLRequest *request;
-    NSMutableArray *lists;
     NSString *selectedWordListName;
+    NSArray *newListNames;
 }
 
 @end
 
 @implementation ListDownloadViewController
+
+@synthesize listNames;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -46,7 +48,10 @@
 #pragma mark - Request Functions
 
 - (void)setupRequest {
-    lists = [NSMutableArray array];
+    if(!listNames) {
+        listNames = [NSMutableArray array];
+    }
+    newListNames = @[];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData *data = [NSData dataWithContentsOfURL:
             [NSURL URLWithString:@"http://buzzy-bingo.herokuapp.com/api/v0.1/lists"]];
@@ -56,16 +61,14 @@
 
 - (void) loadData: (NSData*) data {
     NSError *error;
-    NSArray *listNames = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    NSArray *names = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
     // filter to only those lists not already added
-    NSArray *newListNames = [listNames ma_select:^BOOL(id obj) {
-        return ![lists containsObject: obj];
+    NSLog(@"existing names: %@", listNames);
+    newListNames = [names ma_select:^BOOL(id obj) {
+        return ![listNames containsObject: obj];
     }];
-    
     NSLog(@"new list names: %@", newListNames);
 
-    [lists addObjectsFromArray: newListNames];
-    
     [self.tableView reloadData];
 }
 
@@ -78,7 +81,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return lists.count;
+    return newListNames.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -86,7 +89,7 @@
     static NSString *CellIdentifier = @"StandardTableCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [lists objectAtIndex: indexPath.row];
+    cell.textLabel.text = [newListNames objectAtIndex: indexPath.row];
     
     return cell;
 }
@@ -96,7 +99,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    selectedWordListName = [lists objectAtIndex: indexPath.row];
+    selectedWordListName = [newListNames objectAtIndex: indexPath.row];
     [self performSegueWithIdentifier: @"WordListSegue" sender: nil];
 }
 
