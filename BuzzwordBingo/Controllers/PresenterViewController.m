@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
     self.navigationBar.topItem.title = game.wordList.name;
-	label.text = @"Touch to spin";
+	label.text = @"Touch or shake for the next word.";
     words = [NSMutableArray arrayWithArray: [game.wordList.words jal_shuffle]];
 }
 
@@ -37,12 +37,35 @@
 }
 
 - (IBAction)handleGesture: (id)sender {
-    label.text = [self takeWord];
+    [self nextWord];
 }
 
 - (IBAction)onDone:(id)sender {
     [self dismissModalViewControllerAnimated: YES];
 }
+
+- (void) nextWord {
+    label.text = [self takeWord];
+}
+
+#pragma mark - Supports shake functionality
+
+- (BOOL) canBecomeFirstResponder { return YES; }
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear: animated];
+    [self becomeFirstResponder];
+}
+- (void) viewWillDisappear:(BOOL)animated {
+    [self resignFirstResponder];
+    [super viewWillDisappear:animated];
+}
+
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if(motion == UIEventSubtypeMotionShake) {
+        [self nextWord];
+    }
+}
+
 
 #pragma mark - Model functions
 
