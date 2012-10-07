@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface WordListManagerViewController : UITableViewController
+- (IBAction)onEdit:(id)sender;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *editButton;
 
 @end

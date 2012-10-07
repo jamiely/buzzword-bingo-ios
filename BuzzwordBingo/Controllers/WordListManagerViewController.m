@@ -16,11 +16,14 @@
 @interface WordListManagerViewController () {
     NSMutableArray *wordLists;
     WordList *selectedList;
+    UIBarButtonItem *doneButton;
 }
 
 @end
 
 @implementation WordListManagerViewController
+
+@synthesize editButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -129,4 +132,20 @@
     }];
 }
 
+- (IBAction)onEdit:(id)sender {
+    BOOL editing = self.navigationItem.rightBarButtonItem == self.editButton;
+    
+    self.editButton.title = editing ? @"Done" : @"Edit";
+    if(!doneButton) {
+        doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style: UIBarButtonItemStyleDone target:self action:@selector(onEdit:)];
+    }
+    
+    self.navigationItem.rightBarButtonItem = editing ? doneButton : self.editButton;
+    
+    [self.tableView setEditing:editing animated:YES];
+}
+- (void)viewDidUnload {
+    [self setEditButton:nil];
+    [super viewDidUnload];
+}
 @end
