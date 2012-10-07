@@ -14,6 +14,8 @@
 		6D7BFF4516169AEB00E8432E /* Bingo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4316169AEB00E8432E /* Bingo.xcdatamodeld */; };
 		6D7BFF4B16170ADB00E8432E /* ListDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */; };
 		6D7BFF4E16174C9400E8432E /* WordsDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */; };
+		6D9DD1481622203400C7968F /* contact_email_body.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D9DD1471622203400C7968F /* contact_email_body.txt */; };
+		6D9DD14A1622222000C7968F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9DD1491622222000C7968F /* MessageUI.framework */; };
 		6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */; };
 		6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5D16058157007B0F36 /* UIKit.framework */; };
 		6DC66C6016058157007B0F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5F16058157007B0F36 /* Foundation.framework */; };
@@ -70,6 +72,8 @@
 		6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListDownloadViewController.m; path = Controllers/ListDownloadViewController.m; sourceTree = "<group>"; };
 		6D7BFF4C16174C9400E8432E /* WordsDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsDownloadViewController.h; path = Controllers/WordsDownloadViewController.h; sourceTree = "<group>"; };
 		6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordsDownloadViewController.m; path = Controllers/WordsDownloadViewController.m; sourceTree = "<group>"; };
+		6D9DD1471622203400C7968F /* contact_email_body.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = contact_email_body.txt; path = Assets/contact_email_body.txt; sourceTree = "<group>"; };
+		6D9DD1491622222000C7968F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6DC66C5916058157007B0F36 /* BuzzwordBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzwordBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC66C5D16058157007B0F36 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -132,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9DD14A1622222000C7968F /* MessageUI.framework in Frameworks */,
 				6D7BFF4116169AC000E8432E /* CoreData.framework in Frameworks */,
 				6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */,
 				6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */,
@@ -162,9 +167,18 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		6D9DD1451622201400C7968F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6D9DD1471622203400C7968F /* contact_email_body.txt */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		6DC66C4E16058157007B0F36 = {
 			isa = PBXGroup;
 			children = (
+				6D9DD1491622222000C7968F /* MessageUI.framework */,
 				6D7BFF4016169AC000E8432E /* CoreData.framework */,
 				6DC66C6316058157007B0F36 /* BuzzwordBingo */,
 				6DC66C7B16058157007B0F36 /* BuzzwordBingoTests */,
@@ -199,6 +213,7 @@
 		6DC66C6316058157007B0F36 /* BuzzwordBingo */ = {
 			isa = PBXGroup;
 			children = (
+				6D9DD1451622201400C7968F /* Assets */,
 				6D7BFF4216169AD800E8432E /* Data */,
 				6DD8EF6F160C7D1600D49027 /* Views */,
 				6DC66CC81606A2C4007B0F36 /* Storyboards */,
@@ -397,6 +412,7 @@
 			files = (
 				6DC66C6816058157007B0F36 /* InfoPlist.strings in Resources */,
 				6DC66CCA1606A2EB007B0F36 /* Main_iPad.storyboard in Resources */,
+				6D9DD1481622203400C7968F /* contact_email_body.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

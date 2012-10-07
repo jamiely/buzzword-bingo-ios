@@ -81,6 +81,10 @@
             [self performSegueWithIdentifier: @"WordListManagerSegue" sender: nil];
             break;
         }
+        case 3: {
+            [self composeContactEmail];
+            break;
+        }
     }
 }
 
@@ -92,4 +96,36 @@
     }
 }
 
+#pragma mark - Mail delegate and mail controller functions
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError *)error {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void) composeContactEmail {
+    MFMailComposeViewController *composer = [[MFMailComposeViewController alloc] init];
+    composer.mailComposeDelegate = self;
+    // @todo, move to strings file
+    [composer setToRecipients: @[@"bingo@angelforge.org"]];
+    [composer setMessageBody:[self contactEmailBody] isHTML:NO];
+    [composer setSubject: @"[Bingo] New Word List/Bug Report/Enhancement Request"];
+    [self presentModalViewController:composer animated:YES];
+}
+
+- (NSString*) contactEmailBody {
+    NSString *contactEmailPath = [[NSBundle mainBundle] pathForResource:@"contact_email_body"
+                                                                 ofType:@"txt"];
+    NSError *error;
+    NSString *messageBody =
+        [NSString stringWithContentsOfFile:contactEmailPath
+                                  encoding:NSStringEncodingConversionAllowLossy
+                                     error:&error];
+    if(error) {
+        NSLog(@"Error in retrieving email text: %@", error);
+    }
+    
+    return messageBody;
+}
 @end

@@ -1,0 +1,29 @@
+Hello!
+
+======
+
+I would like to propose the following word list: 
+
+Word list name:
+
+List of words/terms
+term 1
+term 2
+term 3
+
+======
+
+I would like to report the following bug:
+
+When I am on the following screen:
+This happens:
+But I expect this:
+
+Here's how to reproduce the error:
+
+======
+
+I would like to ask for the following enhancement:
+
+
+
