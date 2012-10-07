@@ -152,10 +152,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Downloadable Word Lists" id="e02-CE-GEU"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="h5W-Sj-quN" id="len-aO-EM6"/>
                         <segue destination="ze4-XO-cGw" kind="push" identifier="WordListSegue" id="DOw-4F-GSj"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJF-by-tth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="whiteLarge" id="h5W-Sj-quN">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
             </objects>
             <point key="canvasLocation" x="1135" y="2298"/>
         </scene>
@@ -413,8 +418,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="SK4-89-huO" id="8Nw-7H-fhh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFn-Ee-qfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="whiteLarge" id="SK4-89-huO">
+                    <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
             </objects>
             <point key="canvasLocation" x="2087" y="2298"/>
         </scene>
@@ -435,6 +447,9 @@
         </class>
         <class className="ListDownloadViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ListDownloadViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+            </relationships>
         </class>
         <class className="MenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
@@ -455,6 +470,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WordListManagerViewController.h"/>
             <relationships>
                 <relationship kind="action" name="onEdit:"/>
+                <relationship kind="outlet" name="editButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
         <class className="WordListViewController" superclassName="UIViewController">
@@ -470,6 +486,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WordsDownloadViewController.h"/>
             <relationships>
                 <relationship kind="action" name="onSave:"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
             </relationships>
         </class>
         <class className="WordsViewController" superclassName="UITableViewController">

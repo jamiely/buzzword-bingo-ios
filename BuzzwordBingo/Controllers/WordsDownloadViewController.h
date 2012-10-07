@@ -13,5 +13,6 @@
 - (IBAction)onSave:(id)sender;
 
 @property (nonatomic, strong) NSString *wordListName;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end

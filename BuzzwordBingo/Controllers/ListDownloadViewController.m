@@ -23,6 +23,7 @@
 @implementation ListDownloadViewController
 
 @synthesize listNames;
+@synthesize activityIndicator;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -48,6 +49,9 @@
 #pragma mark - Request Functions
 
 - (void)setupRequest {
+    [self.view addSubview: self.activityIndicator];
+    [self.activityIndicator startAnimating];
+    
     if(!listNames) {
         listNames = [NSMutableArray array];
     }
@@ -60,6 +64,8 @@
 }
 
 - (void) loadData: (NSData*) data {
+    if(!data) return;
+    
     NSError *error;
     NSArray *names = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
     // filter to only those lists not already added
@@ -68,7 +74,8 @@
         return ![listNames containsObject: obj];
     }];
     NSLog(@"new list names: %@", newListNames);
-
+    [self.activityIndicator stopAnimating];
+    [self.activityIndicator removeFromSuperview];
     [self.tableView reloadData];
 }
 
@@ -112,4 +119,9 @@
     }
 }
 
+- (void)viewDidUnload {
+    [self.activityIndicator removeFromSuperview];
+    [self setActivityIndicator:nil];
+    [super viewDidUnload];
+}
 @end

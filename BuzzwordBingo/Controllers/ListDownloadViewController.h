@@ -11,5 +11,6 @@
 @interface ListDownloadViewController : UITableViewController
 
 @property (nonatomic, strong) NSMutableArray *listNames;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end

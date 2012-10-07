@@ -18,6 +18,7 @@
 @implementation WordsDownloadViewController
 
 @synthesize wordListName;
+@synthesize activityIndicator;
 
 - (void)viewDidLoad
 {
@@ -40,10 +41,19 @@
 - (void)downloadWordList {
     if(!wordListName) return;
     
+    [self.view addSubview: self.activityIndicator];
+    [self.activityIndicator startAnimating];
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *urlString = [NSString stringWithFormat:@"http://buzzy-bingo.herokuapp.com/api/v0.1/lists/%@", [wordListName stringByAddingPercentEscapesUsingEncoding: NSStringEncodingConversionAllowLossy]];
         NSURL *url = [NSURL URLWithString: urlString];
         NSData *data = [NSData dataWithContentsOfURL: url];
+        
+        if(!data) return;
+        
+        [self.activityIndicator stopAnimating];
+        [self.activityIndicator removeFromSuperview];
+        
         NSError *error;
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData: data options:0 error:&error];
         
@@ -69,5 +79,11 @@
     else {
         NSLog(@"Error: %@", error);
     }
+}
+- (void)viewDidUnload {
+    [self.activityIndicator stopAnimating];
+    [self.activityIndicator removeFromSuperview];
+    [self setActivityIndicator:nil];
+    [super viewDidUnload];
 }
 @end
