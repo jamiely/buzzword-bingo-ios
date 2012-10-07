@@ -15,5 +15,6 @@
 @property (strong, nonatomic) IBOutlet UINavigationBar *navigationBar;
 - (IBAction)handleGesture:(id)sender;
 - (IBAction)onDone:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *lastWordLabel;
 
 @end

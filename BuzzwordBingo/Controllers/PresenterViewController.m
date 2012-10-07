@@ -12,6 +12,8 @@
 
 @interface PresenterViewController () {
     NSMutableArray *words;
+    NSMutableArray *selectedWords;
+    NSString *lastWord;
 }
 
 @end
@@ -25,14 +27,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    lastWord = @"";
+    [self setLastWordText: lastWord];
     self.navigationBar.topItem.title = game.wordList.name;
 	label.text = @"Touch or shake for the next word.";
     words = [NSMutableArray arrayWithArray: [game.wordList.words jal_shuffle]];
+    selectedWords = [NSMutableArray array];
 }
 
 - (void)viewDidUnload {
     [self setLabel:nil];
     [self setNavigationBar:nil];
+    [self setLastWordLabel:nil];
     [super viewDidUnload];
 }
 
@@ -41,11 +47,37 @@
 }
 
 - (IBAction)onDone:(id)sender {
-    [self dismissModalViewControllerAnimated: YES];
+    [self performSegueWithIdentifier:@"PresenterSummarySegue" sender:self];
 }
 
 - (void) nextWord {
-    label.text = [self takeWord];
+    [self setLastWordText: lastWord];
+    NSString *next = [self takeWord];
+    label.text = next;
+    [selectedWords addObject: next];
+    lastWord = next;
+}
+
+- (void) setLastWordText: (NSString*) lastWord {
+    if(lastWord == @"") {
+        self.lastWordLabel.text = @"";
+    }
+    else {
+        self.lastWordLabel.text = [NSString stringWithFormat:@"  Last word: %@", lastWord];
+    }
+}
+
+#pragma mark - Segue functions
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    id controller = segue.destinationViewController;
+    if([controller respondsToSelector:@selector(setWords:)]) {
+        [controller setWords: selectedWords];
+    }
+}
+
+- (IBAction)dismissBackToMenu:(UIStoryboardSegue*)segue {
+    [self.presentingViewController dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark - Supports shake functionality

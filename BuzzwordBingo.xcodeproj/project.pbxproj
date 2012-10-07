@@ -16,6 +16,7 @@
 		6D7BFF4E16174C9400E8432E /* WordsDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */; };
 		6D9DD1481622203400C7968F /* contact_email_body.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D9DD1471622203400C7968F /* contact_email_body.txt */; };
 		6D9DD14A1622222000C7968F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9DD1491622222000C7968F /* MessageUI.framework */; };
+		6D9DD14D1622259900C7968F /* PresenterSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DD14C1622259900C7968F /* PresenterSummaryViewController.m */; };
 		6DBDA1A4160FB0EE00139AF9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */; };
 		6DC66C5E16058157007B0F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5D16058157007B0F36 /* UIKit.framework */; };
 		6DC66C6016058157007B0F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC66C5F16058157007B0F36 /* Foundation.framework */; };
@@ -74,6 +75,8 @@
 		6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordsDownloadViewController.m; path = Controllers/WordsDownloadViewController.m; sourceTree = "<group>"; };
 		6D9DD1471622203400C7968F /* contact_email_body.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = contact_email_body.txt; path = Assets/contact_email_body.txt; sourceTree = "<group>"; };
 		6D9DD1491622222000C7968F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6D9DD14B1622259800C7968F /* PresenterSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresenterSummaryViewController.h; path = Controllers/PresenterSummaryViewController.h; sourceTree = "<group>"; };
+		6D9DD14C1622259900C7968F /* PresenterSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresenterSummaryViewController.m; path = Controllers/PresenterSummaryViewController.m; sourceTree = "<group>"; };
 		6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6DC66C5916058157007B0F36 /* BuzzwordBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzwordBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC66C5D16058157007B0F36 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -317,6 +320,8 @@
 				6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */,
 				6D7BFF4C16174C9400E8432E /* WordsDownloadViewController.h */,
 				6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */,
+				6D9DD14B1622259800C7968F /* PresenterSummaryViewController.h */,
+				6D9DD14C1622259900C7968F /* PresenterSummaryViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				6D7BFF4516169AEB00E8432E /* Bingo.xcdatamodeld in Sources */,
 				6D7BFF4B16170ADB00E8432E /* ListDownloadViewController.m in Sources */,
 				6D7BFF4E16174C9400E8432E /* WordsDownloadViewController.m in Sources */,
+				6D9DD14D1622259900C7968F /* PresenterSummaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
