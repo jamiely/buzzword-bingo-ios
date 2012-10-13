@@ -134,7 +134,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGM-SR-q9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="1091"/>
+            <point key="canvasLocation" x="1135" y="1103"/>
         </scene>
         <!--List Download View Controller - Downloadable Word Lists-->
         <scene sceneID="oBZ-0S-l0b">

@@ -4,6 +4,8 @@
 <dict>
 	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main_iPad</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main_iPhone</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
