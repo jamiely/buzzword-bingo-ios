@@ -25,7 +25,9 @@
     [super viewDidLoad];
     
     self.title = game.wordList.name;
-    
+}
+
+- (void) viewWillAppear:(BOOL)animated {
     [self setupGridView];
 }
 
@@ -34,23 +36,27 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void) setupGridView {
-    [gridView sizeToFit];
-    
-    // Calculate the size that each space should be
-    spaceSize = gridView.frame.size;
-    spaceSize.width /= (float)game.board.cols;
-    
-    spaceSize.height -= self.navigationController.navigationBar.frame.size.height;
-    spaceSize.height /= (float)game.board.rows;
+- (void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [self setupGridLayout];
+}
 
+- (void) setupGridLayout {
+    // Calculate the size that each space should be
+    CGSize size = gridView.bounds.size;
+    spaceSize = size;
+    spaceSize.width = size.width / (float)game.board.cols;
+    spaceSize.height = size.height / (float)game.board.rows;
+    
+    [gridView reloadData];
+    [gridView layoutSubviews];
+}
+
+- (void) setupGridView {
     // Adjust the content size of the grid view
-    gridView.contentSize = CGSizeMake(spaceSize.width * game.board.cols,
-                                      spaceSize.height * game.board.rows);
     gridView.scrollEnabled = NO;
     gridView.contentSizeGrowsToFillBounds = NO;
     
-    [gridView reloadData];
+    [self setupGridLayout];
 }
 
 - (CGSize) portraitGridCellSizeForGridView:(AQGridView *)aGridView {
@@ -64,11 +70,13 @@
 - (AQGridViewCell *)gridView:(AQGridView *)aGridView cellForItemAtIndex:(NSUInteger)index {
     static NSString *cidStandard = @"StandardCell";
     
+    CGRect frame = CGRectMake(0, 0, spaceSize.width, spaceSize.height);
     BingoGridCell *cell = (BingoGridCell*)[aGridView dequeueReusableCellWithIdentifier: cidStandard];
     if(!cell) {
-        cell = [[BingoGridCell alloc] initWithFrame: CGRectMake(0, 0, spaceSize.width, spaceSize.height)
+        cell = [[BingoGridCell alloc] initWithFrame: frame
                                     reuseIdentifier: cidStandard];
     }
+    cell.frame = frame;
     
     JALSpace *space = [self spaceAtIndex: index];
     cell.word = [space word];

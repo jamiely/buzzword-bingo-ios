@@ -89,6 +89,10 @@
     label.text = word;
 }
 
+- (void) layoutSubviews {
+    label.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
