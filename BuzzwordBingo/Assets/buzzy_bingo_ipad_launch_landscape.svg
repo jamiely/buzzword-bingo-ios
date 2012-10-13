@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="767.036px" height="1004.781px" viewBox="0 0 767.036 1004.781" enable-background="new 0 0 767.036 1004.781"
+	 xml:space="preserve">
+<symbol  id="flower_1_" viewBox="-32.887 -32.887 65.774 65.773">
+	<g>
+		<path fill="#EC008C" stroke="#000000" stroke-miterlimit="10" d="M-16.194,13.32C-7.25,13.32,0,0,0,0s-7.25-13.32-16.193-13.32
+			c-8.943,0-16.194,5.964-16.194,13.32S-25.137,13.32-16.194,13.32z"/>
+		<path fill="#EC008C" stroke="#000000" stroke-miterlimit="10" d="M-13.32-16.193C-13.32-7.25,0,0,0,0s13.32-7.25,13.32-16.193
+			c0-8.942-5.964-16.193-13.32-16.193C-7.357-32.387-13.32-25.137-13.32-16.193z"/>
+		<path fill="#EC008C" stroke="#000000" stroke-miterlimit="10" d="M16.193-13.32C7.25-13.32,0,0,0,0s7.25,13.32,16.193,13.32
+			c8.943,0,16.194-5.964,16.194-13.32S25.137-13.32,16.193-13.32z"/>
+		<path fill="#EC008C" stroke="#000000" stroke-miterlimit="10" d="M13.32,16.193C13.32,7.25,0,0,0,0s-13.32,7.25-13.32,16.193
+			c0,8.942,5.963,16.193,13.32,16.193C7.356,32.387,13.32,25.137,13.32,16.193z"/>
+	</g>
+	<path fill="#FFF200" stroke="#000000" stroke-miterlimit="10" d="M7.5,0c0-3.409-3.358-6.173-7.5-6.173S-7.5-3.409-7.5,0
+		S-4.142,6.173,0,6.173S7.5,3.409,7.5,0z"/>
+</symbol>
+<g id="Layer_3">
+	<rect fill="#75C26B" stroke="#000000" stroke-miterlimit="10" width="767.036" height="1004.781"/>
+</g>
+<g id="Layer_4" display="none">
+	
+		<use xlink:href="#flower_1_"  width="65.774" height="65.773" x="-32.887" y="-32.887" transform="matrix(1 0 0 -1 161.5 61.0005)" display="inline" overflow="visible"/>
+	
+		<use xlink:href="#flower_1_"  width="65.774" height="65.773" x="-32.887" y="-32.887" transform="matrix(1 0 0 -1 51.5 203.5005)" display="inline" overflow="visible"/>
+	
+		<use xlink:href="#flower_1_"  width="65.774" height="65.773" x="-32.887" y="-32.887" transform="matrix(1 0 0 -1 504 117.5005)" display="inline" overflow="visible"/>
+	
+		<use xlink:href="#flower_1_"  width="65.774" height="65.773" x="-32.887" y="-32.887" transform="matrix(1 0 0 -1 89 362.0005)" display="inline" overflow="visible"/>
+</g>
+<g id="Layer_5" display="none">
+	<g id="flower" display="inline">
+		<g>
+			<path fill="#5AC7ED" stroke="#000000" stroke-miterlimit="10" d="M216.806,138.18c8.944,0,16.193,13.32,16.193,13.32
+				s-7.25,13.32-16.193,13.32c-8.943,0-16.193-5.964-16.193-13.32S207.863,138.18,216.806,138.18z"/>
+			<path fill="#5AC7ED" stroke="#000000" stroke-miterlimit="10" d="M219.68,167.693c0-8.943,13.32-16.193,13.32-16.193
+				s13.32,7.25,13.32,16.193s-5.963,16.193-13.32,16.193C225.643,183.887,219.68,176.637,219.68,167.693z"/>
+			<path fill="#5AC7ED" stroke="#000000" stroke-miterlimit="10" d="M249.193,164.82C240.25,164.82,233,151.5,233,151.5
+				s7.25-13.32,16.193-13.32s16.193,5.964,16.193,13.32S258.137,164.82,249.193,164.82z"/>
+			<path fill="#5AC7ED" stroke="#000000" stroke-miterlimit="10" d="M246.32,135.307c0,8.943-13.32,16.193-13.32,16.193
+				s-13.32-7.25-13.32-16.193s5.963-16.193,13.32-16.193C240.356,119.113,246.32,126.363,246.32,135.307z"/>
+		</g>
+		<ellipse fill="#FFF200" stroke="#000000" stroke-miterlimit="10" cx="233" cy="151.5" rx="7.5" ry="6.173"/>
+	</g>
+</g>
+<g id="Layer_2">
+	<g>
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M518.995,460.535
+			c18.908,24.489,70.384,31.936,70.384,31.936s5.817-51.685-13.09-76.175c-18.914-24.49-39.572-24.731-55.394-12.517
+			C505.074,415.997,500.083,436.043,518.995,460.535z"/>
+		<path fill="#FFFFFF" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M670.431,520.712
+			c-30.56,4.831-73.107-25.083-73.107-25.083s31.244-41.583,61.804-46.414c30.563-4.832,45.753,9.171,48.874,28.915
+			C711.124,497.873,700.997,515.88,670.431,520.712z"/>
+	</g>
+	<g>
+		<g>
+			<path stroke="#000000" stroke-miterlimit="10" d="M655.234,395.312c0,0,5.562-9.012,10.62-14.262
+				c5.056-5.251,20.808-13.185,20.808-13.185s-11.687,10.687-14.796,14.202c-3.108,3.517-9.741,15.984-9.741,15.984L655.234,395.312
+				z"/>
+			<circle fill="#FFF200" stroke="#000000" stroke-width="5" stroke-miterlimit="10" cx="682.376" cy="370.344" r="10.429"/>
+		</g>
+		<g>
+			<path stroke="#000000" stroke-miterlimit="10" d="M613.671,378.795c0,0,2.14-10.37,2.066-17.66
+				c-0.073-7.291-6.083-23.87-6.083-23.87s1.165,15.792,1.015,20.483c-0.152,4.692-3.889,18.31-3.889,18.31L613.671,378.795z"/>
+			<circle fill="#FFF200" stroke="#000000" stroke-width="5" stroke-miterlimit="10" cx="611.07" cy="342.01" r="10.43"/>
+		</g>
+	</g>
+	<path fill="#12090A" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M590.821,551.241
+		c-6.356,16.005-40.054,44.042-40.054,44.042s-5.259-43.515,1.099-59.521L590.821,551.241z"/>
+	
+		<ellipse transform="matrix(0.3693 -0.9293 0.9293 0.3693 -98.0207 864.8798)" fill="#FFF200" stroke="#000000" stroke-width="5" stroke-miterlimit="10" cx="588.171" cy="504.655" rx="51.63" ry="48.053"/>
+	<path fill="#FFF200" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M672.217,445.077
+		c-11.883,29.91-45.766,44.521-75.675,32.638c-29.909-11.885-44.522-45.768-32.638-75.678s41.237-33.12,71.146-21.235
+		C664.961,392.686,684.104,415.168,672.217,445.077z"/>
+	<g>
+		<path stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M619.019,410.863c0.843-6.135-1.429-11.698-5.983-13.506
+			c-5.708-2.268-12.847,2.211-15.944,10.007c-3.096,7.794-0.979,15.953,4.728,18.223c4.333,1.721,9.485-0.443,13.075-4.992
+			l-7.731-9.229L619.019,410.863z"/>
+		<path stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M648.661,422.643c0.844-6.135-1.427-11.697-5.981-13.505
+			c-5.707-2.268-12.847,2.211-15.945,10.006c-3.097,7.794-0.981,15.953,4.729,18.223c4.332,1.72,9.486-0.444,13.074-4.992
+			l-7.734-9.229L648.661,422.643z"/>
+	</g>
+	<path stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M599.054,437.189c-3.883,13.518-1.433,26.083,5.473,28.068
+		c6.906,1.984,15.651-7.365,19.536-20.88L599.054,437.189z"/>
+	<path fill="#12090A" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M547.109,480.438
+		c-1.181,2.108-2.243,4.316-3.162,6.63c-2.523,6.35-3.772,12.865-3.892,19.241c7.441,10.212,20.953,20.213,37.864,26.936
+		c16.155,6.418,32.104,8.523,44.323,6.682c4.576-4.86,8.366-10.703,11.015-17.369c0.818-2.057,1.487-4.136,2.045-6.218
+		c-12.612,3.048-30.334,1.25-48.321-5.897C568.376,503.046,553.926,491.684,547.109,480.438z"/>
+</g>
+<g id="Layer_1_1_">
+	<text transform="matrix(1 0 0 1 61.9253 448.2505)" fill="#FFF200" font-family="'CooperBlack'" font-size="159.7935">Buzzy</text>
+	
+		<text transform="matrix(1 0 0 1 61.9253 448.2505)" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" font-family="'CooperBlack'" font-size="159.7935">Buzzy</text>
+	<text transform="matrix(1 0 0 1 71.3262 598.874)" fill="#FFF200" font-family="'CooperBlack'" font-size="159.7935">Bingo</text>
+	
+		<text transform="matrix(1 0 0 1 71.3262 598.874)" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" font-family="'CooperBlack'" font-size="159.7935">Bingo</text>
+</g>
+</svg>
