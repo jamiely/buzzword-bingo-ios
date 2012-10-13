@@ -39,7 +39,7 @@
     tableView.backgroundView = nil;
     
     // Load the menu data
-	data = [@"User Mode,Presenter Mode,Manage Word Lists,Contact" componentsSeparatedByString:@","];
+	data = [@"Player Mode,Presenter Mode,Manage Word Lists,Contact" componentsSeparatedByString:@","];
     
     [self loadFlowers];
 }
