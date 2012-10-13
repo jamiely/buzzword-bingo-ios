@@ -55,7 +55,7 @@
 }
 
 - (void) setMarked: (BOOL) val {
-    self.contentView.backgroundColor = val ? [UIColor redColor] : [UIColor whiteColor];
+    self.contentView.backgroundColor = val ? [UIColor yellowColor] : [UIColor whiteColor];
 }
 
 - (void) setRandomColor {

@@ -13,5 +13,6 @@
     UITableViewDelegate, MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIView *flowerView;
 
 @end

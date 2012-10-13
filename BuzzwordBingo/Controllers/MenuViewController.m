@@ -40,10 +40,35 @@
     
     // Load the menu data
 	data = [@"User Mode,Presenter Mode,Manage Word Lists,Contact" componentsSeparatedByString:@","];
+    
+    [self loadFlowers];
+}
+
+- (void) loadFlowers {
+    NSArray *flowers = @[
+        [[UIImage alloc] initWithContentsOfFile:
+            [[NSBundle mainBundle] pathForResource:@"flower_blue" ofType:@"png"]],
+        [[UIImage alloc] initWithContentsOfFile:
+         [[NSBundle mainBundle] pathForResource:@"flower_magenta" ofType:@"png"]]
+    ];
+    
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    for (NSInteger i = 0, count = arc4random() % 10 + 10; i < count; i++) {
+        UIImage *flowerImage = [flowers objectAtIndex: arc4random() % [flowers count]];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage: flowerImage];
+        [self.flowerView addSubview: imageView];
+        CGRect frame = imageView.frame;
+        frame.origin.x = arc4random() % (NSInteger)screenRect.size.width;
+        frame.origin.y = arc4random() % (NSInteger)screenRect.size.height;
+        imageView.frame = frame;
+        // rotate the flower randomly at most 45 degrees
+        imageView.transform = CGAffineTransformMakeRotation((arc4random() % 7853) / 1000.0);
+    }
 }
 
 - (void)viewDidUnload
 {
+    [self setFlowerView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -52,6 +77,8 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+#pragma mark - Table delegate functions
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;

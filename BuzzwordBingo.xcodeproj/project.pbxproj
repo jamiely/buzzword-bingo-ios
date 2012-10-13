@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4541DDF1CB6A496185CA2862 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A49FBB575B4B0D8735F88A /* libPods.a */; };
+		6D22C9C516291DD50035ED09 /* buzzy_bingo_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D22C9C316291DD50035ED09 /* buzzy_bingo_logo.png */; };
+		6D22C9C916291EA30035ED09 /* buzzy_bingo_long_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D22C9C816291EA30035ED09 /* buzzy_bingo_long_logo.png */; };
+		6D22C9CC1629215C0035ED09 /* flower_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D22C9CA1629215C0035ED09 /* flower_blue.png */; };
+		6D22C9CD1629215C0035ED09 /* flower_magenta.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D22C9CB1629215C0035ED09 /* flower_magenta.png */; };
 		6D7BFEEE1616931900E8432E /* WordListManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFEED1616931900E8432E /* WordListManagerViewController.m */; };
 		6D7BFEF21616969200E8432E /* WordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFEF11616969200E8432E /* WordsViewController.m */; };
 		6D7BFF4116169AC000E8432E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BFF4016169AC000E8432E /* CoreData.framework */; };
@@ -63,6 +67,10 @@
 /* Begin PBXFileReference section */
 		09EC1AF2EB2D49FC8AD35A85 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		13A49FBB575B4B0D8735F88A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D22C9C316291DD50035ED09 /* buzzy_bingo_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buzzy_bingo_logo.png; path = Assets/buzzy_bingo_logo.png; sourceTree = "<group>"; };
+		6D22C9C816291EA30035ED09 /* buzzy_bingo_long_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buzzy_bingo_long_logo.png; path = Assets/buzzy_bingo_long_logo.png; sourceTree = "<group>"; };
+		6D22C9CA1629215C0035ED09 /* flower_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower_blue.png; path = Assets/flower_blue.png; sourceTree = "<group>"; };
+		6D22C9CB1629215C0035ED09 /* flower_magenta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower_magenta.png; path = Assets/flower_magenta.png; sourceTree = "<group>"; };
 		6D7BFEEC1616931900E8432E /* WordListManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordListManagerViewController.h; path = Controllers/WordListManagerViewController.h; sourceTree = "<group>"; };
 		6D7BFEED1616931900E8432E /* WordListManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordListManagerViewController.m; path = Controllers/WordListManagerViewController.m; sourceTree = "<group>"; };
 		6D7BFEF01616969200E8432E /* WordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsViewController.h; path = Controllers/WordsViewController.h; sourceTree = "<group>"; };
@@ -173,6 +181,10 @@
 		6D9DD1451622201400C7968F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6D22C9CA1629215C0035ED09 /* flower_blue.png */,
+				6D22C9CB1629215C0035ED09 /* flower_magenta.png */,
+				6D22C9C816291EA30035ED09 /* buzzy_bingo_long_logo.png */,
+				6D22C9C316291DD50035ED09 /* buzzy_bingo_logo.png */,
 				6D9DD1471622203400C7968F /* contact_email_body.txt */,
 			);
 			name = Assets;
@@ -418,6 +430,10 @@
 				6DC66C6816058157007B0F36 /* InfoPlist.strings in Resources */,
 				6DC66CCA1606A2EB007B0F36 /* Main_iPad.storyboard in Resources */,
 				6D9DD1481622203400C7968F /* contact_email_body.txt in Resources */,
+				6D22C9C516291DD50035ED09 /* buzzy_bingo_logo.png in Resources */,
+				6D22C9C916291EA30035ED09 /* buzzy_bingo_long_logo.png in Resources */,
+				6D22C9CC1629215C0035ED09 /* flower_blue.png in Resources */,
+				6D22C9CD1629215C0035ED09 /* flower_magenta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
