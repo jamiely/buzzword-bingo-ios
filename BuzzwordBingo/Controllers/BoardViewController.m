@@ -46,7 +46,7 @@
     spaceSize = size;
     spaceSize.width = size.width / (float)game.board.cols;
     spaceSize.height = size.height / (float)game.board.rows;
-    
+    gridView.contentSize = size;
     [gridView reloadData];
     [gridView layoutSubviews];
 }
