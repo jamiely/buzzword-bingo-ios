@@ -89,7 +89,7 @@
     [gridView reloadItemsAtIndices: [NSIndexSet indexSetWithIndex:index]
                      withAnimation: AQGridViewItemAnimationFade];
     if(game.isBingo) {
-        [[[UIAlertView alloc] initWithTitle:@"Alert" message:@"BINGO" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"BINGO!" message:@"You win!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
     }
 }
 
