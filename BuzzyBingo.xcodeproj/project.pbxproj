@@ -113,19 +113,19 @@
 		6D9DD14B1622259800C7968F /* PresenterSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresenterSummaryViewController.h; path = Controllers/PresenterSummaryViewController.h; sourceTree = "<group>"; };
 		6D9DD14C1622259900C7968F /* PresenterSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresenterSummaryViewController.m; path = Controllers/PresenterSummaryViewController.m; sourceTree = "<group>"; };
 		6DBDA1A3160FB0EE00139AF9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6DC66C5916058157007B0F36 /* BuzzwordBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzwordBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC66C5916058157007B0F36 /* BuzzyBingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzyBingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC66C5D16058157007B0F36 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6DC66C5F16058157007B0F36 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DC66C6116058157007B0F36 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6DC66C6516058157007B0F36 /* BuzzwordBingo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuzzwordBingo-Info.plist"; sourceTree = "<group>"; };
+		6DC66C6516058157007B0F36 /* BuzzyBingo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuzzyBingo-Info.plist"; sourceTree = "<group>"; };
 		6DC66C6716058157007B0F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DC66C6916058157007B0F36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6DC66C6B16058157007B0F36 /* BuzzwordBingo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuzzwordBingo-Prefix.pch"; sourceTree = "<group>"; };
+		6DC66C6B16058157007B0F36 /* BuzzyBingo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuzzyBingo-Prefix.pch"; sourceTree = "<group>"; };
 		6DC66C6C16058157007B0F36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DC66C6D16058157007B0F36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6DC66C7416058157007B0F36 /* BuzzwordBingoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzwordBingoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC66C7416058157007B0F36 /* BuzzyBingoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzyBingoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DC66C7516058157007B0F36 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6DC66C7D16058157007B0F36 /* BuzzwordBingoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuzzwordBingoTests-Info.plist"; sourceTree = "<group>"; };
+		6DC66C7D16058157007B0F36 /* BuzzyBingoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BuzzyBingoTests-Info.plist"; sourceTree = "<group>"; };
 		6DC66C7F16058157007B0F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DC66C8116058157007B0F36 /* BuzzwordBingoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuzzwordBingoTests.h; sourceTree = "<group>"; };
 		6DC66C8216058157007B0F36 /* BuzzwordBingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuzzwordBingoTests.m; sourceTree = "<group>"; };
@@ -247,8 +247,8 @@
 		6DC66C5A16058157007B0F36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DC66C5916058157007B0F36 /* BuzzwordBingo.app */,
-				6DC66C7416058157007B0F36 /* BuzzwordBingoTests.octest */,
+				6DC66C5916058157007B0F36 /* BuzzyBingo.app */,
+				6DC66C7416058157007B0F36 /* BuzzyBingoTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,10 +286,10 @@
 		6DC66C6416058157007B0F36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DC66C6516058157007B0F36 /* BuzzwordBingo-Info.plist */,
+				6DC66C6516058157007B0F36 /* BuzzyBingo-Info.plist */,
 				6DC66C6616058157007B0F36 /* InfoPlist.strings */,
 				6DC66C6916058157007B0F36 /* main.m */,
-				6DC66C6B16058157007B0F36 /* BuzzwordBingo-Prefix.pch */,
+				6DC66C6B16058157007B0F36 /* BuzzyBingo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 		6DC66C7C16058157007B0F36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DC66C7D16058157007B0F36 /* BuzzwordBingoTests-Info.plist */,
+				6DC66C7D16058157007B0F36 /* BuzzyBingoTests-Info.plist */,
 				6DC66C7E16058157007B0F36 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -400,9 +400,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DC66C5816058157007B0F36 /* BuzzwordBingo */ = {
+		6DC66C5816058157007B0F36 /* BuzzyBingo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DC66C8616058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzwordBingo" */;
+			buildConfigurationList = 6DC66C8616058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzyBingo" */;
 			buildPhases = (
 				6DC66C5516058157007B0F36 /* Sources */,
 				6DC66C5616058157007B0F36 /* Frameworks */,
@@ -413,14 +413,14 @@
 			);
 			dependencies = (
 			);
-			name = BuzzwordBingo;
+			name = BuzzyBingo;
 			productName = BuzzwordBingo;
-			productReference = 6DC66C5916058157007B0F36 /* BuzzwordBingo.app */;
+			productReference = 6DC66C5916058157007B0F36 /* BuzzyBingo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6DC66C7316058157007B0F36 /* BuzzwordBingoTests */ = {
+		6DC66C7316058157007B0F36 /* BuzzyBingoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DC66C8916058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzwordBingoTests" */;
+			buildConfigurationList = 6DC66C8916058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzyBingoTests" */;
 			buildPhases = (
 				6DC66C6F16058157007B0F36 /* Sources */,
 				6DC66C7016058157007B0F36 /* Frameworks */,
@@ -432,9 +432,9 @@
 			dependencies = (
 				6DC66C7A16058157007B0F36 /* PBXTargetDependency */,
 			);
-			name = BuzzwordBingoTests;
+			name = BuzzyBingoTests;
 			productName = BuzzwordBingoTests;
-			productReference = 6DC66C7416058157007B0F36 /* BuzzwordBingoTests.octest */;
+			productReference = 6DC66C7416058157007B0F36 /* BuzzyBingoTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -446,7 +446,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Jamie Ly";
 			};
-			buildConfigurationList = 6DC66C5316058157007B0F36 /* Build configuration list for PBXProject "BuzzwordBingo" */;
+			buildConfigurationList = 6DC66C5316058157007B0F36 /* Build configuration list for PBXProject "BuzzyBingo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -458,8 +458,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DC66C5816058157007B0F36 /* BuzzwordBingo */,
-				6DC66C7316058157007B0F36 /* BuzzwordBingoTests */,
+				6DC66C5816058157007B0F36 /* BuzzyBingo */,
+				6DC66C7316058157007B0F36 /* BuzzyBingoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -580,7 +580,7 @@
 /* Begin PBXTargetDependency section */
 		6DC66C7A16058157007B0F36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6DC66C5816058157007B0F36 /* BuzzwordBingo */;
+			target = 6DC66C5816058157007B0F36 /* BuzzyBingo */;
 			targetProxy = 6DC66C7916058157007B0F36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -660,10 +660,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09EC1AF2EB2D49FC8AD35A85 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzwordBingo-Prefix.pch";
-				INFOPLIST_FILE = "BuzzwordBingo/BuzzwordBingo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzyBingo-Prefix.pch";
+				INFOPLIST_FILE = "BuzzwordBingo/BuzzyBingo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = BuzzyBingo;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -673,9 +676,10 @@
 			baseConfigurationReference = 09EC1AF2EB2D49FC8AD35A85 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzwordBingo-Prefix.pch";
-				INFOPLIST_FILE = "BuzzwordBingo/BuzzwordBingo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzyBingo-Prefix.pch";
+				INFOPLIST_FILE = "BuzzwordBingo/BuzzyBingo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = BuzzyBingo;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -690,8 +694,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzwordBingo-Prefix.pch";
-				INFOPLIST_FILE = "BuzzwordBingoTests/BuzzwordBingoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BuzzwordBingoTests/BuzzyBingoTests-Info.plist";
+				PRODUCT_NAME = BuzzyBingoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -707,8 +711,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzwordBingo-Prefix.pch";
-				INFOPLIST_FILE = "BuzzwordBingoTests/BuzzwordBingoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "BuzzwordBingoTests/BuzzyBingoTests-Info.plist";
+				PRODUCT_NAME = BuzzyBingoTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -717,7 +721,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DC66C5316058157007B0F36 /* Build configuration list for PBXProject "BuzzwordBingo" */ = {
+		6DC66C5316058157007B0F36 /* Build configuration list for PBXProject "BuzzyBingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DC66C8416058157007B0F36 /* Debug */,
@@ -726,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DC66C8616058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzwordBingo" */ = {
+		6DC66C8616058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzyBingo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DC66C8716058157007B0F36 /* Debug */,
@@ -735,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DC66C8916058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzwordBingoTests" */ = {
+		6DC66C8916058157007B0F36 /* Build configuration list for PBXNativeTarget "BuzzyBingoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DC66C8A16058157007B0F36 /* Debug */,
