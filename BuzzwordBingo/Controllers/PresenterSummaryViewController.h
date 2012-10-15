@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong) NSArray *words;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)onDone:(id)sender;
 
 @end

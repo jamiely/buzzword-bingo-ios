@@ -58,12 +58,12 @@
     lastWord = next;
 }
 
-- (void) setLastWordText: (NSString*) lastWord {
-    if(lastWord == @"") {
+- (void) setLastWordText: (NSString*) aLastWord {
+    if(aLastWord == @"") {
         self.lastWordLabel.text = @"";
     }
     else {
-        self.lastWordLabel.text = [NSString stringWithFormat:@"  Last word: %@", lastWord];
+        self.lastWordLabel.text = [NSString stringWithFormat:@"  Last word: %@", aLastWord];
     }
 }
 

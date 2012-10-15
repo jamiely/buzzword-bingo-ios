@@ -22,15 +22,18 @@
 		6D434FA816292E540003A8A1 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D434FA516292E540003A8A1 /* Default-Portrait.png */; };
 		6D434FA916292E540003A8A1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D434FA616292E540003A8A1 /* Default.png */; };
 		6D434FAA16292E540003A8A1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D434FA716292E540003A8A1 /* Default@2x.png */; };
-		6D434FAC16292E600003A8A1 /* iPad-Retina–Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D434FAB16292E600003A8A1 /* iPad-Retina–Portrait.png */; };
 		6D434FAF16292F940003A8A1 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D434FAD16292F940003A8A1 /* Default-Landscape.png */; };
-		6D434FB016292F940003A8A1 /* iPad-Retina–Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D434FAE16292F940003A8A1 /* iPad-Retina–Landscape.png */; };
 		6D7BFEEE1616931900E8432E /* WordListManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFEED1616931900E8432E /* WordListManagerViewController.m */; };
 		6D7BFEF21616969200E8432E /* WordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFEF11616969200E8432E /* WordsViewController.m */; };
 		6D7BFF4116169AC000E8432E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7BFF4016169AC000E8432E /* CoreData.framework */; };
 		6D7BFF4516169AEB00E8432E /* Bingo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4316169AEB00E8432E /* Bingo.xcdatamodeld */; };
 		6D7BFF4B16170ADB00E8432E /* ListDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */; };
 		6D7BFF4E16174C9400E8432E /* WordsDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */; };
+		6D86A6BD162B944F003D9208 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D86A6BC162B944F003D9208 /* Default-568h@2x.png */; };
+		6D86A6C5162B9760003D9208 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D86A6C4162B9760003D9208 /* Default-Landscape@2x~ipad.png */; };
+		6D86A6C7162B97B2003D9208 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D86A6C6162B97B2003D9208 /* Default-Landscape~ipad.png */; };
+		6D86A6C9162B983E003D9208 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D86A6C8162B983E003D9208 /* Default-Portrait@2x~ipad.png */; };
+		6D86A6CF162B99F2003D9208 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D86A6CE162B99F2003D9208 /* Icon-144.png */; };
 		6D9DD1481622203400C7968F /* contact_email_body.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D9DD1471622203400C7968F /* contact_email_body.txt */; };
 		6D9DD14A1622222000C7968F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9DD1491622222000C7968F /* MessageUI.framework */; };
 		6D9DD14D1622259900C7968F /* PresenterSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DD14C1622259900C7968F /* PresenterSummaryViewController.m */; };
@@ -95,9 +98,7 @@
 		6D434FA516292E540003A8A1 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait.png"; path = "Assets/Default-Portrait.png"; sourceTree = "<group>"; };
 		6D434FA616292E540003A8A1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Assets/Default.png; sourceTree = "<group>"; };
 		6D434FA716292E540003A8A1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Assets/Default@2x.png"; sourceTree = "<group>"; };
-		6D434FAB16292E600003A8A1 /* iPad-Retina–Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-Retina–Portrait.png"; path = "Assets/iPad-Retina–Portrait.png"; sourceTree = "<group>"; };
 		6D434FAD16292F940003A8A1 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "Assets/Default-Landscape.png"; sourceTree = "<group>"; };
-		6D434FAE16292F940003A8A1 /* iPad-Retina–Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-Retina–Landscape.png"; path = "Assets/iPad-Retina–Landscape.png"; sourceTree = "<group>"; };
 		6D7BFEEC1616931900E8432E /* WordListManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordListManagerViewController.h; path = Controllers/WordListManagerViewController.h; sourceTree = "<group>"; };
 		6D7BFEED1616931900E8432E /* WordListManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordListManagerViewController.m; path = Controllers/WordListManagerViewController.m; sourceTree = "<group>"; };
 		6D7BFEF01616969200E8432E /* WordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsViewController.h; path = Controllers/WordsViewController.h; sourceTree = "<group>"; };
@@ -108,6 +109,11 @@
 		6D7BFF4A16170ADB00E8432E /* ListDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListDownloadViewController.m; path = Controllers/ListDownloadViewController.m; sourceTree = "<group>"; };
 		6D7BFF4C16174C9400E8432E /* WordsDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordsDownloadViewController.h; path = Controllers/WordsDownloadViewController.h; sourceTree = "<group>"; };
 		6D7BFF4D16174C9400E8432E /* WordsDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordsDownloadViewController.m; path = Controllers/WordsDownloadViewController.m; sourceTree = "<group>"; };
+		6D86A6BC162B944F003D9208 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Assets/Default-568h@2x.png"; sourceTree = "<group>"; };
+		6D86A6C4162B9760003D9208 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "Assets/Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		6D86A6C6162B97B2003D9208 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Assets/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		6D86A6C8162B983E003D9208 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "Assets/Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		6D86A6CE162B99F2003D9208 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-144.png"; path = "Assets/Icon-144.png"; sourceTree = "<group>"; };
 		6D9DD1471622203400C7968F /* contact_email_body.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = contact_email_body.txt; path = Assets/contact_email_body.txt; sourceTree = "<group>"; };
 		6D9DD1491622222000C7968F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		6D9DD14B1622259800C7968F /* PresenterSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresenterSummaryViewController.h; path = Controllers/PresenterSummaryViewController.h; sourceTree = "<group>"; };
@@ -209,9 +215,12 @@
 		6D9DD1451622201400C7968F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6D86A6CE162B99F2003D9208 /* Icon-144.png */,
+				6D86A6C8162B983E003D9208 /* Default-Portrait@2x~ipad.png */,
+				6D86A6C6162B97B2003D9208 /* Default-Landscape~ipad.png */,
+				6D86A6C4162B9760003D9208 /* Default-Landscape@2x~ipad.png */,
+				6D86A6BC162B944F003D9208 /* Default-568h@2x.png */,
 				6D434FAD16292F940003A8A1 /* Default-Landscape.png */,
-				6D434FAE16292F940003A8A1 /* iPad-Retina–Landscape.png */,
-				6D434FAB16292E600003A8A1 /* iPad-Retina–Portrait.png */,
 				6D434FA516292E540003A8A1 /* Default-Portrait.png */,
 				6D434FA616292E540003A8A1 /* Default.png */,
 				6D434FA716292E540003A8A1 /* Default@2x.png */,
@@ -486,10 +495,13 @@
 				6D434FA816292E540003A8A1 /* Default-Portrait.png in Resources */,
 				6D434FA916292E540003A8A1 /* Default.png in Resources */,
 				6D434FAA16292E540003A8A1 /* Default@2x.png in Resources */,
-				6D434FAC16292E600003A8A1 /* iPad-Retina–Portrait.png in Resources */,
 				6D434FAF16292F940003A8A1 /* Default-Landscape.png in Resources */,
-				6D434FB016292F940003A8A1 /* iPad-Retina–Landscape.png in Resources */,
 				6DDBA6391629E01500A35CCE /* Main_iPhone.storyboard in Resources */,
+				6D86A6BD162B944F003D9208 /* Default-568h@2x.png in Resources */,
+				6D86A6C5162B9760003D9208 /* Default-Landscape@2x~ipad.png in Resources */,
+				6D86A6C7162B97B2003D9208 /* Default-Landscape~ipad.png in Resources */,
+				6D86A6C9162B983E003D9208 /* Default-Portrait@2x~ipad.png in Resources */,
+				6D86A6CF162B99F2003D9208 /* Icon-144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,7 +676,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzyBingo-Prefix.pch";
 				INFOPLIST_FILE = "BuzzwordBingo/BuzzyBingo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = BuzzyBingo;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -678,7 +690,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BuzzwordBingo/BuzzyBingo-Prefix.pch";
 				INFOPLIST_FILE = "BuzzwordBingo/BuzzyBingo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = BuzzyBingo;
 				WRAPPER_EXTENSION = app;
 			};

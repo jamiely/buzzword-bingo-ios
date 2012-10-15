@@ -24,6 +24,5 @@
 - (NSURL *)applicationDocumentsDirectory;
 - (BOOL) wordListExists: (NSString *) name;
 - (NSArray*) wordLists;
-- (void) saveWordList: (WordList *) list;
 
 @end

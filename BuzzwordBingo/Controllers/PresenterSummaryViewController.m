@@ -27,7 +27,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"StandardTableCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier];
     
     cell.textLabel.text = [words objectAtIndex: indexPath.row];
     
@@ -41,5 +41,10 @@
 - (void)viewDidUnload {
     [self setTableView:nil];
     [super viewDidUnload];
+}
+- (IBAction)onDone:(id)sender {
+    // dismiss both this and the previous view controller
+    [self.presentingViewController.presentingViewController
+        dismissModalViewControllerAnimated:YES];
 }
 @end

@@ -29,6 +29,7 @@ new word list suggestions.
 # Build
 
 This project uses Cocoapods. Run `pod install` to acquire dependencies.
+Open `BuzzyBingo.xcworkspace` to build the project.
 
 # Test
 

@@ -151,12 +151,6 @@
 
 #pragma mark - Core Data Entity Functions
 
-- (void) saveWordLists {
-    [[[Content main] wordLists] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        [self saveWordList: obj];
-    }];
-}
-
 - (BOOL) wordListExists: (NSString *) name {
     NSManagedObjectContext *context = self.managedObjectContext;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName: @"WordList"];
